@@ -3,9 +3,9 @@ package elements.elements;
 import elements.baseElement.BaseElement;
 import org.openqa.selenium.By;
 
-public class Select extends BaseElement {
+public class CheckBox extends BaseElement {
 
-    public Select(By locator, String name) {
+    public CheckBox(By locator, String name) {
         super(locator, name);
     }
 }

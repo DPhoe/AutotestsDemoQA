@@ -9,7 +9,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.testng.Assert;
 
-import java.time.Duration;
 
 
 public class DriverSingleton {
@@ -42,7 +41,6 @@ public class DriverSingleton {
                     Assert.fail("Incorrect browser name: " + ConfigManager.getBrowserName());
             }
         }
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(ConfigManager.getImplicitlyWaitSec()));
         return driver;
     }
 }
