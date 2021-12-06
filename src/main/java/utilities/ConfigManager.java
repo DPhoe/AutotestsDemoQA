@@ -4,7 +4,7 @@ import org.openqa.selenium.Point;
 
 public class ConfigManager {
 
-    private static String browserName = "Firefox";
+    private static String browserName = "Chrome";
     public static String getBrowserName() {
         return browserName;
     }

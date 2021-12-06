@@ -2,6 +2,13 @@ package elements.elements;
 
 import elements.baseElement.BaseElement;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import utilities.ConfigManager;
+import utilities.DriverSingleton;
+
+import java.time.Duration;
 
 public class TextField extends BaseElement {
 
@@ -14,7 +21,9 @@ public class TextField extends BaseElement {
     }
 
     public static String getText(By locator, String name) {
-        return BaseElement.findElement(locator).getText();
+        WebElement getText = new WebDriverWait(DriverSingleton.getDriver(),
+                Duration.ofSeconds(ConfigManager.getExplicitWaitSec())).until(ExpectedConditions.visibilityOf(findElement(locator)));
+        return getText.getText();
     }
 
 }

@@ -5,10 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import utilities.DriverSingleton;
 
-public class Alerts extends BaseElement {
-    public Alerts(By locator, String name) {
-        super(locator, name);
-    }
+public class Alerts{
 
     public static String getAlertText (String name) {
         return DriverSingleton.getDriver().switchTo().alert().getText();
