@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import pages.pages.DemoqaLandingPage;
 import pages.pages.DemoqaWebTablesPage;
 import utilities.BrowserActions;
+import utilities.ConfigManager;
 import utilities.TestDataManager;
 
 import java.util.ArrayList;
@@ -18,13 +19,15 @@ public class TablesTest extends baseTest.BaseTest {
         data.addAll(TestDataManager.getFirstRecord());
         ArrayList<String> dataSecond = new ArrayList<>();
         dataSecond.addAll(TestDataManager.getSecondRecord());
-        return new Object[][] {data.toArray(), dataSecond.toArray()};
+        ArrayList<String> dataThird = new ArrayList<>();
+        dataThird.addAll(TestDataManager.getThirdRecord());
+        return new Object[][] {data.toArray(), dataSecond.toArray(), dataThird.toArray()};
     }
 
 
     @Test (dataProvider = "data")
     public void IFrameTest (String firstName, String lastName, String eMail, String age, String salary, String department) {
-        BrowserActions.open("https://demoqa.com/");
+        BrowserActions.open(ConfigManager.getURL());
         Assert.assertTrue(DemoqaLandingPage.isDemoQABannerDisplayed(), "Unique page element is not displayed");
         DemoqaLandingPage.clickElementsButton();
         DemoqaLandingPage.clickWebTablesButton();
@@ -37,7 +40,7 @@ public class TablesTest extends baseTest.BaseTest {
                 DemoqaWebTablesPage.RegistrationForm.getFourthRowText().contains(eMail) &&
                 DemoqaWebTablesPage.RegistrationForm.getFourthRowText().contains(age) &&
                 DemoqaWebTablesPage.RegistrationForm.getFourthRowText().contains(salary) &&
-                DemoqaWebTablesPage.RegistrationForm.getFourthRowText().contains(department));
+                DemoqaWebTablesPage.RegistrationForm.getFourthRowText().contains(department), "Results in table not match entered data");
         int recordCount = DemoqaWebTablesPage.getNotEmptyRecordCount();
         DemoqaWebTablesPage.clickDeleteButton();
         Assert.assertTrue(DemoqaWebTablesPage.getNotEmptyRecordCount() < recordCount, "Record didn't deleted");

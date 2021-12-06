@@ -2,10 +2,33 @@ package utilities;
 
 import org.openqa.selenium.Point;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Properties;
+
 public class ConfigManager {
 
-    private static String browserName = "Chrome";
+    private static ArrayList<String> stringConfigs = new ArrayList<>();
+    public static ArrayList<String> getStringConfigs() throws IOException {
+        FileReader reader = new FileReader("src/main/resources/ProjectConfig.properties");
+        Properties props = new Properties();
+        props.load(reader);
+        stringConfigs.add(props.getProperty("URL"));
+        stringConfigs.add(props.getProperty("BrowserName"));
+        return stringConfigs;
+    }
+
+    private static String URL;
+    public static String getURL() {
+        URL = stringConfigs.get(0);
+        return URL;
+    }
+
+    private static String browserName;
     public static String getBrowserName() {
+        browserName = stringConfigs.get(1);
         return browserName;
     }
 
@@ -42,6 +65,4 @@ public class ConfigManager {
     private static boolean closeAfterTest = false;
     public static boolean getCloseAfterTest() {return closeAfterTest;}
 
-    private static boolean closeAfterSuit;
-    public static boolean getCloseAfterSuite() {return closeAfterSuit;}
 }

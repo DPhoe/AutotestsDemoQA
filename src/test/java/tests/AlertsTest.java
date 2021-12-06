@@ -6,13 +6,16 @@ import org.testng.annotations.Test;
 import pages.pages.DemoqaAlertsPage;
 import pages.pages.DemoqaLandingPage;
 import utilities.BrowserActions;
+import utilities.ConfigManager;
 import utilities.RandomGenerator;
+
+import java.net.URL;
 
 public class AlertsTest extends BaseTest {
 
     @Test
     public void AlertsTest () {
-        BrowserActions.open("https://demoqa.com/");
+        BrowserActions.open(ConfigManager.getURL());
         Assert.assertTrue(DemoqaLandingPage.isDemoQABannerDisplayed(), "Unique page element is not displayed");
         DemoqaLandingPage.clickAlertFrameWindowsButton();
         DemoqaLandingPage.clickAlertsButton();

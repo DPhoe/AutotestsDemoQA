@@ -33,11 +33,11 @@ public class DemoqaAlertsPage extends BasePage {
     }
 
     public static boolean isSimpleAlertPresent() {
-        return Alerts.isAlertPresent("Is simple alert present");
+        return Alerts.isAlertPresent("Check is simple alert present");
     }
 
     public static void clickConfirmAlertButton() {
-        Button.click(confirmAlertButton, "On button click, confirm box will appear");
+        Button.click(confirmAlertButton, "Click button with title 'On button click, confirm box will appear'");
     }
 
     public static String getConfirmationText() {

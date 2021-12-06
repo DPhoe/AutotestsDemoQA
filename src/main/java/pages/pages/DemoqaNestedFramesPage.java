@@ -18,7 +18,7 @@ public class DemoqaNestedFramesPage extends BasePage {
     private static final By framesText = By.xpath("//h1[@id='sampleHeading']");
 
     public static boolean isNestedFrameFromDisplayed() {
-        return BaseElement.isDisplayed(nestedFrameForm, "Displayed nested frame form");
+        return BaseElement.isDisplayed(nestedFrameForm, "Check is nested frame form displayed");
     }
 
     public static void switchToParentFrame() {

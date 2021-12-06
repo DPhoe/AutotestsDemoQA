@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utilities.ConfigManager;
 import utilities.DriverSingleton;
+import utilities.LoggerUtility;
 
 import java.time.Duration;
 import java.util.List;
@@ -25,30 +26,36 @@ public class BaseElement {
     }
 
     public static void click(By locator, String name) {
+        LoggerUtility.log.info(name);
         new WebDriverWait(DriverSingleton.getDriver(),
                 Duration.ofSeconds(ConfigManager.getExplicitWaitSec())).until(ExpectedConditions.visibilityOf(findElement(locator))).click();
     }
 
     public static void getAttribute (By locator, String attribute, String name) {
+        LoggerUtility.log.info(name);
         findElement(locator).getAttribute(attribute);
     }
 
     public static Boolean isDisplayed (By locator, String name) {
+        LoggerUtility.log.info(name);
         return findElement(locator).isDisplayed();
     }
 
     public static void hoverOver (By locator, String name) {
+        LoggerUtility.log.info(name);
         Actions action = new Actions(DriverSingleton.getDriver());
         action.moveToElement(findElement(locator)).perform();
     }
 
     public static WebElement waitElementToBeVisible(WebElement element, String name) {
+        LoggerUtility.log.info(name);
         new WebDriverWait(DriverSingleton.getDriver(),
                 Duration.ofSeconds(ConfigManager.getExplicitWaitSec())).until(ExpectedConditions.visibilityOf(element));
         return element;
     }
 
     public static WebElement waitElementToBeClickable(WebElement element, String name) {
+        LoggerUtility.log.info(name);
         new WebDriverWait(DriverSingleton.getDriver(),
                 Duration.ofSeconds(ConfigManager.getExplicitWaitSec())).until(ExpectedConditions.elementToBeClickable(element));
         return element;

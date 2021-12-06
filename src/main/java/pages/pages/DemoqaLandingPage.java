@@ -12,21 +12,22 @@ public class DemoqaLandingPage extends BasePage {
     private static final By nestedFramesButton = By.xpath("//span[contains(text(), 'Nested')]/parent::li");
     private static final By elementsButton = By.xpath("//h5[contains(text(), 'ments')]/../../parent::div");
     private static final By webTablesButton = By.xpath("//span[contains(text(), 'Tables')]/parent::li");
+    private static final By browserWindowsButton = By.xpath("//span[contains(text(),'indo')]");
 
     public static boolean isDemoQABannerDisplayed () {
-       return BasePage.isUniqueElementDisplayed(uniqueElement, "DemoQABanner");
+       return BasePage.isUniqueElementDisplayed(uniqueElement, "Check is DemoQA banner displayed");
     }
 
     public static void clickAlertFrameWindowsButton () {
-        Button.click(alertWindowsFrameButton, "Alerts, Frame & Windows button");
+        Button.click(alertWindowsFrameButton, "Click alerts, Frame & Windows button");
     }
 
     public static void clickAlertsButton () {
-        Button.click(alertButton, "Alerts button");
+        Button.click(alertButton, "Click alerts button");
     }
 
     public static void clickNestedFramesButton () {
-        Button.click(nestedFramesButton, "Clicked nested frames button");
+        Button.click(nestedFramesButton, "Click nested frames button");
     }
 
     public static void clickElementsButton() {
@@ -37,4 +38,7 @@ public class DemoqaLandingPage extends BasePage {
         Button.click(webTablesButton, "Click web tables button");
     }
 
+    public static void clickBrowserWindowsButton() {
+        Button.click(browserWindowsButton, "Click browser windows button");
+    }
 }

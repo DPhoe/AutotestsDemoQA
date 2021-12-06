@@ -19,7 +19,7 @@ public class DemoqaWebTablesPage extends BasePage {
     private static final By deleteRecordButton = By.xpath("//span[@id='delete-record-4']");
 
     public static boolean isWebTablesWrapperDisplayed () {
-        return BasePage.isUniqueElementDisplayed(uniqueElement, "Web Tables Form");
+        return BasePage.isUniqueElementDisplayed(uniqueElement, "Check is web Tables Form displayed");
     }
 
     public static void clickAddButton() {
@@ -27,7 +27,7 @@ public class DemoqaWebTablesPage extends BasePage {
     }
 
     public static String getFourthRowText() {
-        return TextField.getText(newTableRow, "Get text from 4th row");
+        return TextField.getText(newTableRow, "Get part of text from 4th row to assert");
     }
 
     public static int getNotEmptyRecordCount() {
@@ -54,12 +54,12 @@ public class DemoqaWebTablesPage extends BasePage {
         private static final By submitButton = By.xpath("//button[@id='submit']");
 
         public static void sendRecordDataInTable(String firstName, String lastName, String eMail, String age, String salary, String department) {
-            TextField.sendKeys(firstNameField, firstName);
-            TextField.sendKeys(lastNameField, lastName);
-            TextField.sendKeys(eMailField, eMail);
-            TextField.sendKeys(ageField, age);
-            TextField.sendKeys(salaryField, salary);
-            TextField.sendKeys(departmentField, department);
+            TextField.sendKeys(firstNameField, firstName, "Send first name");
+            TextField.sendKeys(lastNameField, lastName, "Send last name");
+            TextField.sendKeys(eMailField, eMail, "Send E-mail");
+            TextField.sendKeys(ageField, age, "Send age");
+            TextField.sendKeys(salaryField, salary, "Send salary");
+            TextField.sendKeys(departmentField, department, "Send department");
         }
 
         public static void clickSubmitButton() {

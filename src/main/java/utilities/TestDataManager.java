@@ -20,7 +20,6 @@ public class TestDataManager {
 
     }
 
-
     private static ArrayList<String> secondRecord = new ArrayList<String>();
     public static ArrayList<String> getSecondRecord() {
         secondRecord.add("Buttercup");
@@ -30,6 +29,17 @@ public class TestDataManager {
         secondRecord.add("2000");
         secondRecord.add("beta");
         return secondRecord;
+    }
+
+    private static ArrayList<String> thirdRecord = new ArrayList<String>();
+    public static ArrayList<String> getThirdRecord() {
+        thirdRecord.add("Jack");
+        thirdRecord.add("Black");
+        thirdRecord.add("sand@nudes.here");
+        thirdRecord.add("77");
+        thirdRecord.add("9999");
+        thirdRecord.add("High church");
+        return thirdRecord;
     }
 
 }
