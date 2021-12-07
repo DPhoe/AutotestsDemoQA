@@ -13,6 +13,9 @@ public class DemoqaLandingPage extends BasePage {
     private static final By elementsButton = By.xpath("//h5[contains(text(), 'ments')]/../../parent::div");
     private static final By webTablesButton = By.xpath("//span[contains(text(), 'Tables')]/parent::li");
     private static final By browserWindowsButton = By.xpath("//span[contains(text(),'indo')]");
+    private static final By widgetsButton = By.xpath("//h5[contains(text(), 'gets')]/../../parent::div");
+    private static final By sliderButton = By.xpath("//span[contains(text(),'lid')]/parent::li");
+    private static final By uploadDownloadButton = By.xpath("//span[contains(text(),'load')]/parent::li");
 
     public static boolean isDemoQABannerDisplayed () {
        return BasePage.isUniqueElementDisplayed(uniqueElement, "Check is DemoQA banner displayed");
@@ -40,5 +43,17 @@ public class DemoqaLandingPage extends BasePage {
 
     public static void clickBrowserWindowsButton() {
         Button.click(browserWindowsButton, "Click browser windows button");
+    }
+
+    public static void clickWidgetsButton() {
+        Button.click(widgetsButton, "Click widgets button");
+    }
+
+    public static void clickSliderButton() {
+        Button.click(sliderButton, "Click slider button");
+    }
+
+    public static void clickUploadDownloadButton() {
+        Button.click(uploadDownloadButton, "Click download upload button");
     }
 }

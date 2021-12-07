@@ -9,12 +9,13 @@ import utilities.BrowserActions;
 import utilities.ConfigManager;
 import utilities.TestDataManager;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class TablesTest extends baseTest.BaseTest {
 
     @DataProvider(name = "data")
-    public Object[][] dpMethod(){
+    public Object[][] dpMethod() throws IOException {
         ArrayList<String> data = new ArrayList<>();
         data.addAll(TestDataManager.getFirstRecord());
         ArrayList<String> dataSecond = new ArrayList<>();

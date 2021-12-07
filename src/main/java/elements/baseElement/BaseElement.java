@@ -1,11 +1,13 @@
 package elements.baseElement;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.basePage.BasePage;
 import utilities.ConfigManager;
 import utilities.DriverSingleton;
 import utilities.LoggerUtility;
@@ -31,9 +33,9 @@ public class BaseElement {
                 Duration.ofSeconds(ConfigManager.getExplicitWaitSec())).until(ExpectedConditions.visibilityOf(findElement(locator))).click();
     }
 
-    public static void getAttribute (By locator, String attribute, String name) {
+    public static String getAttribute (By locator, String attribute, String name) {
         LoggerUtility.log.info(name);
-        findElement(locator).getAttribute(attribute);
+        return findElement(locator).getAttribute(attribute);
     }
 
     public static Boolean isDisplayed (By locator, String name) {
@@ -60,6 +62,5 @@ public class BaseElement {
                 Duration.ofSeconds(ConfigManager.getExplicitWaitSec())).until(ExpectedConditions.elementToBeClickable(element));
         return element;
     }
-
 
 }

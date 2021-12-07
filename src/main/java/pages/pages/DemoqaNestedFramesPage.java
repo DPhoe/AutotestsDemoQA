@@ -45,13 +45,13 @@ public class DemoqaNestedFramesPage extends BasePage {
         Button.click(framesButton, "Click frame button");
     }
 
-    public static void switchToFrameByIndex(int index) {
-        Frames.switchToFrameByIndex(index, "Switch iframe by index" + index);
+    public static void switchToFrameById(String id) {
+        Frames.switchToFrameByNameOrId(id, "Switch iframe by id" + id);
     }
 
     public static String getTextFromFrame() {
-        WebElement IFrameTextHolder = DriverSingleton.getDriver().findElement(framesText);
-        BaseElement.waitElementToBeVisible(IFrameTextHolder, "Wait for element visible");
+        WebElement IFrameTextHolder;
+        BaseElement.waitElementToBeClickable(IFrameTextHolder = DriverSingleton.getDriver().findElement(framesText), "Wait for element visible");
         return TextField.getText(framesText, "Get text from frame");
     }
 }

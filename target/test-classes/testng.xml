@@ -4,6 +4,9 @@
     <test name="G:\GitBush\Task2\m.kuhar">
         <classes>
             <class name="tests.AlertsTest"></class>
+            <class name="tests.HandlesTest"></class>
+            <class name="tests.IFrameTest"></class>
+            <class name="tests.TablesTest"></class>
         </classes>
     </test>
 </suite>

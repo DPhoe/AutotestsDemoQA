@@ -1,7 +1,5 @@
 package elements.elements;
 
-import elements.baseElement.BaseElement;
-import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import utilities.DriverSingleton;
 import utilities.LoggerUtility;
