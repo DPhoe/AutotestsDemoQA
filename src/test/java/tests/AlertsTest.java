@@ -1,40 +1,38 @@
 package tests;
 
-import baseTest.BaseTest;
+import framework.alerts.Alerts;
+import framework.baseTest.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.pages.DemoqaAlertsPage;
-import pages.pages.DemoqaLandingPage;
-import utilities.BrowserActions;
-import utilities.ConfigManager;
-import utilities.RandomGenerator;
-
-import java.net.URL;
+import framework.utilities.BrowserActions;
+import framework.utilities.ConfigManager;
+import framework.utilities.RandomGenerator;
 
 public class AlertsTest extends BaseTest {
 
     @Test
-    public void AlertsTest () {
+    public void AlertsTest () {;
         BrowserActions.open(ConfigManager.getURL());
-        Assert.assertTrue(DemoqaLandingPage.isDemoQABannerDisplayed(), "Unique page element is not displayed");
-        DemoqaLandingPage.clickAlertFrameWindowsButton();
-        DemoqaLandingPage.clickAlertsButton();
-        Assert.assertTrue(DemoqaAlertsPage.isAlertFormDisplayed(), "Alert form is not displayed");
-        DemoqaAlertsPage.clickSimpleAlertButton();
-        Assert.assertEquals(DemoqaAlertsPage.getAlertText(), "You clicked a button", "Alert text don't match");
-        DemoqaAlertsPage.acceptAlert();
-        Assert.assertFalse(DemoqaAlertsPage.isSimpleAlertPresent(), "Alert is still present");
-        DemoqaAlertsPage.clickConfirmAlertButton();
-        Assert.assertEquals(DemoqaAlertsPage.getAlertText(),"Do you confirm action?", "Alert text don't match");
-        DemoqaAlertsPage.acceptAlert();
-        Assert.assertTrue(DemoqaAlertsPage.getConfirmationText().contains("Ok")
-                && DemoqaAlertsPage.getConfirmationText().contains("You selected"), "Confirmation text don't match");
-        DemoqaAlertsPage.clickPromptAlertButton();
-        Assert.assertEquals(DemoqaAlertsPage.getAlertText(),"Please enter your name");
+        Assert.assertTrue(demoqaLandingPage.isUniqueElementDisplayed(), "Unique page element is not displayed");
+        demoqaLandingPage.alertWindowsFrameButton.waitAndClick();
+        demoqaLandingPage.alertButton.waitAndClick();
+        Assert.assertTrue(demoqaAlertsPage.isUniqueElementDisplayed(), "Alert form is not displayed");
+        demoqaAlertsPage.simpleAlertButton.waitAndClick();
+        Assert.assertTrue(Alerts.isAlertPresent("Check is simple alert present"), "Alert is not present");
+        Assert.assertEquals(Alerts.getAlertText("Get alert text"), "You clicked a button", "Alert text don't match");
+        Alerts.acceptAlert("Accept alert");
+        Assert.assertFalse(Alerts.isAlertPresent("Check is alert present"), "Alert is still present");
+        demoqaAlertsPage.confirmAlertButton.waitAndClick();
+        Assert.assertEquals(Alerts.getAlertText("Get alert text"),"Do you confirm action?", "Alert text don't match");
+        Alerts.acceptAlert("Accept alert");
+        Assert.assertTrue(demoqaAlertsPage.confirmResultField.getText().contains("Ok")
+                && demoqaAlertsPage.confirmResultField.getText().contains("You selected"), "Confirmation text don't match");
+        demoqaAlertsPage.promptAlertButton.waitAndClick();
+        Assert.assertEquals(Alerts.getAlertText("Get alert text"),"Please enter your name");
         String text = RandomGenerator.getTimestamp();
-        DemoqaAlertsPage.enterTextIntoAlert(text);
-        DemoqaAlertsPage.acceptAlert();
-        Assert.assertTrue(DemoqaAlertsPage.getPromptResultFieldText().contains(text), "Result text don't match entered text");
+        Alerts.sendTextToAlert(text, "Send random generated text to alert");
+        Alerts.acceptAlert("Accept alert");
+        Assert.assertTrue(demoqaAlertsPage.promptAlertResultField.getText().contains(text), "Result text don't match entered text");
 
     }
 }

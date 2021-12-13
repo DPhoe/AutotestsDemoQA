@@ -1,27 +1,27 @@
 package tests;
 
-import baseTest.BaseTest;
+import framework.baseTest.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.pages.DemoqaLandingPage;
-import pages.pages.DemoqaUploadDownloadPage;
-import utilities.BrowserActions;
-import utilities.ConfigManager;
+import pagesDemoQA.DemoqaLandingPage;
+import pagesDemoQA.DemoqaUploadDownloadPage;
+import framework.utilities.BrowserActions;
+import framework.utilities.ConfigManager;
 
 public class FileOperationTest extends BaseTest {
 
     @Test
     public void FileTest () throws InterruptedException {
         BrowserActions.open(ConfigManager.getURL());
-        Assert.assertTrue(DemoqaLandingPage.isDemoQABannerDisplayed(), "Unique page element is not displayed");
-        DemoqaLandingPage.clickElementsButton();
+        Assert.assertTrue(demoqaLandingPage.isUniqueElementDisplayed(), "Unique page element is not displayed");
+        demoqaLandingPage.elementsButton.waitAndClick();
         BrowserActions.scroll(1000);
-        DemoqaLandingPage.clickUploadDownloadButton();
-        Assert.assertTrue(DemoqaUploadDownloadPage.isUploadDownloadPageOpen(), "Upload-download page is not open");
-        DemoqaUploadDownloadPage.clickDownloadButton();
+        demoqaLandingPage.uploadDownloadButton.waitAndClick();
+        Assert.assertTrue(demoqaUploadDownloadPage.isUniqueElementDisplayed(), "Upload-download page is not open");
+        demoqaUploadDownloadPage.downloadButton.waitAndClick();
         BrowserActions.waitForFileToBeDownloaded();
-        DemoqaUploadDownloadPage.uploadFile();
-        Assert.assertTrue(DemoqaUploadDownloadPage.getUploadedFilePath().contains("sampleFile"), "Text do not contains file name");
+        demoqaUploadDownloadPage.uploadFileButton.sendKeys("//path");
+        Assert.assertTrue(demoqaUploadDownloadPage.uploadedFilePathTextField.getText().contains("sampleFile"), "Text do not contains file name");
 
     }
 }
