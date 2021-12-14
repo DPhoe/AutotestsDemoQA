@@ -14,16 +14,16 @@ public class Slider extends BaseElement {
         super(locator, name);
     }
 
-    public void moveSliderByPixels(By locator, int x, int y) {
-        WebElement slider = BaseElement.findElement(locator);
+    public void moveSliderByPixels(int x, int y) {
+        WebElement slider = findElement(locator);
         Actions move = new Actions(DriverSingleton.getDriver());
         Action action = (Action) move.dragAndDropBy(slider, x, y).build();
         action.perform();
     }
 
-    public void moveSliderWithArrowKeys(int value) {
+    public void moveSliderWithArrowKeys(int value, int initialSliderPosition) {
         DemoqaWidgetsPage page = new DemoqaWidgetsPage();
-        if (value <= 50) {
+        if (value <= initialSliderPosition) {
             while (page.getSliderValueInt() != value){
                 BaseElement.findElement(locator).sendKeys(Keys.ARROW_LEFT);
             }

@@ -52,14 +52,14 @@ public abstract class BaseElement {
         action.moveToElement(findElement(locator)).perform();
     }
 
-    public WebElement waitElementToBeVisible(WebElement element, String name) {
+    protected WebElement waitToBeVisible(WebElement element, String name) {
         LoggerUtility.log.info(name);
         new WebDriverWait(DriverSingleton.getDriver(),
                 Duration.ofSeconds(ConfigManager.getExplicitWaitSec())).until(ExpectedConditions.visibilityOf(element));
         return element;
     }
 
-    public WebElement waitElementToBeClickable(WebElement element, String name) {
+    protected WebElement waitToBeClickable(WebElement element, String name) {
         LoggerUtility.log.info(name);
         new WebDriverWait(DriverSingleton.getDriver(),
                 Duration.ofSeconds(ConfigManager.getExplicitWaitSec())).until(ExpectedConditions.elementToBeClickable(element));

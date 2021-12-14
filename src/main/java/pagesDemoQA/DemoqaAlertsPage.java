@@ -11,10 +11,29 @@ public class DemoqaAlertsPage extends BasePage {
         super(locator, name);
     }
 
-    public final Button simpleAlertButton = new Button(By.xpath("//button[@id='alertButton']"), "Simple alert button");
-    public final Button confirmAlertButton = new Button(By.xpath("//button[@id='confirmButton']"), "Confirm alert button");
-    public final TextField confirmResultField = new TextField(By.xpath("//span[@id='confirmResult']"), "Confirm result text field");
-    public final Button promptAlertButton = new Button(By.xpath("//button[@id='promtButton']"), "Prompt alert button");
-    public final TextField promptAlertResultField = new TextField(By.xpath("//span[@id='promptResult']"), "Prompt alert result text field");
+    private Button simpleAlertButton = new Button(By.xpath("//button[@id='alertButton']"), "Simple alert button");
+    private Button confirmAlertButton = new Button(By.xpath("//button[@id='confirmButton']"), "Confirm alert button");
+    private TextField confirmResultField = new TextField(By.xpath("//span[@id='confirmResult']"), "Confirm result text field");
+    private Button promptAlertButton = new Button(By.xpath("//button[@id='promtButton']"), "Prompt alert button");
+    private TextField promptAlertResultField = new TextField(By.xpath("//span[@id='promptResult']"), "Prompt alert result text field");
 
+    public Button getSimpleAlertButton() {
+        return simpleAlertButton;
+    }
+
+    public Button getConfirmAlertButton() {
+        return confirmAlertButton;
+    }
+
+    public TextField getConfirmResultField() {
+        return confirmResultField;
+    }
+
+    public Button getPromptAlertButton() {
+        return promptAlertButton;
+    }
+
+    public TextField getPromptAlertResultField() {
+        return promptAlertResultField;
+    }
 }

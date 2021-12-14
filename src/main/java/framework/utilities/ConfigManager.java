@@ -5,108 +5,96 @@ import org.openqa.selenium.Point;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Properties;
+import java.util.*;
 
 public class ConfigManager {
 
-    private static ArrayList<String> stringConfigs = new ArrayList<>();
-    public static ArrayList<String> getStringConfigs() throws IOException {
+    private static Map<String, String> stringConfigs = new HashMap<>();
+    public static Map<String, String> getStringConfigs() throws IOException {
         FileReader reader = new FileReader("src/main/resources/ProjectConfig.properties");
         Properties props = new Properties();
         props.load(reader);
-        stringConfigs.add(props.getProperty("URL"));
-        stringConfigs.add(props.getProperty("BrowserName"));
+        stringConfigs.put("URL", props.getProperty("URL"));
+        stringConfigs.put("BrowserName", props.getProperty("BrowserName"));
+        stringConfigs.put("filePath", props.getProperty("filePath"));
         return stringConfigs;
     }
 
-    private static ArrayList<Integer> intConfig = new ArrayList<>();
-    public static ArrayList<Integer> getIntConfig() throws IOException {
+
+    private static Map<String,Integer> intConfig = new HashMap<>();
+    public static Map<String, Integer> getIntConfig() throws IOException {
         FileReader reader = new FileReader("src/main/resources/ProjectConfig.properties");
         Properties props = new Properties();
         props.load(reader);
-        intConfig.add(Parser.stringToInt((props.getProperty("implicitlyWaitSec"))));
-        intConfig.add(Parser.stringToInt((props.getProperty("explicitWaitSec"))));
-        intConfig.add(Parser.stringToInt((props.getProperty("windowSizeX"))));
-        intConfig.add(Parser.stringToInt((props.getProperty("windowSizeY"))));
-        intConfig.add(Parser.stringToInt((props.getProperty("windowPositionX"))));
-        intConfig.add(Parser.stringToInt((props.getProperty("windowPositionY"))));
+        intConfig.put("implicitlyWaitSec" ,Parser.stringToInt((props.getProperty("implicitlyWaitSec"))));
+        intConfig.put("explicitWaitSec" ,Parser.stringToInt((props.getProperty("explicitWaitSec"))));
+        intConfig.put("windowSizeX" ,Parser.stringToInt((props.getProperty("windowSizeX"))));
+        intConfig.put("windowSizeY" ,Parser.stringToInt((props.getProperty("windowSizeY"))));
+        intConfig.put("windowPositionX" ,Parser.stringToInt((props.getProperty("windowPositionX"))));
+        intConfig.put("windowPositionY" ,Parser.stringToInt((props.getProperty("windowPositionY"))));
         return intConfig;
     }
 
-    private static ArrayList<Boolean> booleanConfig = new ArrayList<>();
-    public static ArrayList<Boolean> getBooleanConfig() throws IOException {
+    private static Map<String, Boolean> booleanConfig = new HashMap<>();
+    public static Map<String, Boolean> getBooleanConfig() throws IOException {
         FileReader reader = new FileReader("src/main/resources/ProjectConfig.properties");
         Properties props = new Properties();
         props.load(reader);
         if(props.getProperty("widowMaximize").equals("true")) {
-            booleanConfig.add(true);
+            booleanConfig.put("widowMaximize",true);
         }
-        else booleanConfig.add(false);
+        else booleanConfig.put("widowMaximize",false);
         if(props.getProperty("enablePresetWindowSize").equals("true")) {
-            booleanConfig.add(true);
+            booleanConfig.put("enablePresetWindowSize",true);
         }
-        else booleanConfig.add(false);
+        else booleanConfig.put("enablePresetWindowSize", false);
         if(props.getProperty("closeAfterTest").equals("true")) {
-            booleanConfig.add(true);
+            booleanConfig.put( "closeAfterTest",true);
         }
-        else booleanConfig.add(false);
+        else booleanConfig.put("closeAfterTest",false);
 
         return booleanConfig;
     }
 
     private static String URL;
     public static String getURL() {
-        URL = stringConfigs.get(0);
-        return URL;
+        return URL = stringConfigs.get("URL");
     }
 
-    private static String browserName;
     public static String getBrowserName() {
-        browserName = stringConfigs.get(1);
-        return browserName;
+        return stringConfigs.get("BrowserName");
     }
 
-    private static int implicitlyWaitSec;
+    public static String getFilePath() {
+        return stringConfigs.get("filePath");
+    }
+
     public static int getImplicitlyWaitSec() {
-        implicitlyWaitSec = intConfig.get(0);
-        return implicitlyWaitSec;
+        return intConfig.get("implicitlyWaitSec");
     }
 
-    private static int explicitWaitSec;
     public static int getExplicitWaitSec() {
-        explicitWaitSec = intConfig.get(1);
-        return explicitWaitSec;
+        return intConfig.get("explicitWaitSec");
     }
 
-    private static boolean widowMaximize;
     public static boolean getWindowMaximize() {
-        widowMaximize = booleanConfig.get(0);
-        return widowMaximize;
+        return booleanConfig.get("widowMaximize");
     }
 
-    private static boolean enablePresetWindowSize;
     public static boolean getEnablePresetWindowSize() {
-        enablePresetWindowSize = booleanConfig.get(1);
-        return enablePresetWindowSize;
+        return booleanConfig.get("enablePresetWindowSize");
     }
 
-    private static org.openqa.selenium.Dimension windowSizes;
     public static org.openqa.selenium.Dimension getWindowSizes() {
-        windowSizes = new Dimension(intConfig.get(2), intConfig.get(3));
-        return windowSizes;
+        return new Dimension(intConfig.get("windowSizeX"), intConfig.get("windowSizeY"));
     }
 
-    private static Point windowPosition;
     public static Point getWindowPosition() {
-        windowPosition = new Point(intConfig.get(4), intConfig.get(5));
-        return windowPosition;
+        return new Point(intConfig.get("windowPositionX"), intConfig.get("windowPositionY"));
     }
 
-    private static boolean closeAfterTest;
     public static boolean getCloseAfterTest() {
-        closeAfterTest = booleanConfig.get(2);
-        return closeAfterTest;
+        return booleanConfig.get("closeAfterTest");
     }
 
 }

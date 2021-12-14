@@ -3,7 +3,6 @@ package framework.utilities;
 
 import org.openqa.selenium.JavascriptExecutor;
 
-import java.io.File;
 import java.time.Duration;
 import java.util.Set;
 
@@ -37,6 +36,10 @@ public class BrowserActions {
 
     public static void driverQuit() {
         DriverSingleton.getDriver().quit();
+    }
+
+    public static void initDriver() {
+        DriverSingleton.getDriver().navigate().refresh();
     }
 
     public static String getCurrentUTL(String name) {
@@ -89,15 +92,4 @@ public class BrowserActions {
         js.executeScript("window.scrollBy(0," + value + ")");
     }
 
-    public static void waitForFileToBeDownloaded() throws InterruptedException {
-        File f = new File("C:\\Users\\mkukhar\\Downloads\\sampleFile.jpeg");
-
-        long filesize1;
-        long filesize2;
-        do {
-            filesize1 = f.length();
-            Thread.sleep(1000);
-            filesize2 = f.length();
-        } while (filesize2 != filesize1);
-    }
 }

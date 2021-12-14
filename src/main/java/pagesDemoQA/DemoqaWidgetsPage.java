@@ -18,10 +18,10 @@ public class DemoqaWidgetsPage extends BasePage {
 
     public DemoqaWidgetsPage() {}
 
-    public final Slider slider = new Slider(By.xpath("//input[contains(@class,'slid')]"), "Simple slider, default value '25' ");
-    public final TextField sliderValueField = new TextField(By.xpath("//input[@id='sliderValue']"), "Slider value field");
-    public final Button progressBarButton = new Button(By.xpath("//span[contains(text(),'ress')]/parent::li"), "Progress bar button");
-    public final Button startStopButton = new Button(By.xpath("//button[@id='startStopButton']"), "Start & stop button");
+    private Slider slider = new Slider(By.xpath("//input[contains(@class,'slid')]"), "Simple slider, default value '25' ");
+    private TextField sliderValueField = new TextField(By.xpath("//input[@id='sliderValue']"), "Slider value field");
+    private Button progressBarButton = new Button(By.xpath("//span[contains(text(),'ress')]/parent::li"), "Progress bar button");
+    private Button startStopButton = new Button(By.xpath("//button[@id='startStopButton']"), "Start & stop button");
 
     public int getSliderValueInt() {
         int sliderInteger = Parser.stringToInt(sliderValueField.getAttribute( "Value", "Get Value attribute"));
@@ -36,9 +36,28 @@ public class DemoqaWidgetsPage extends BasePage {
     }
 
     public void progressBarStopper(int Age) {
-        while (getCurrentProgressBarValue() < Age) {
-            continue;
+        for (int i = 0; i < 100; i++) {
+            while (getCurrentProgressBarValue() < Age) {
+                continue;
+            }
+            startStopButton.waitAndClick();
+            break;
         }
-        startStopButton.waitAndClick();
+    }
+
+    public Slider getSlider() {
+        return slider;
+    }
+
+    public TextField getSliderValueField() {
+        return sliderValueField;
+    }
+
+    public Button getProgressBarButton() {
+        return progressBarButton;
+    }
+
+    public Button getStartStopButton() {
+        return startStopButton;
     }
 }

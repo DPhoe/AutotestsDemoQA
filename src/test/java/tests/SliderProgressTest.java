@@ -1,10 +1,9 @@
 package tests;
 
 import framework.baseTest.BaseTest;
+import framework.utilities.Parser;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pagesDemoQA.DemoqaLandingPage;
-import pagesDemoQA.DemoqaWidgetsPage;
 import framework.utilities.BrowserActions;
 import framework.utilities.ConfigManager;
 
@@ -12,26 +11,25 @@ import static framework.utilities.RandomGenerator.randomInt;
 
 public class SliderProgressTest extends BaseTest {
 
-//    @Test
-//    public void SliderTest () {
-//        BrowserActions.open(ConfigManager.getURL());
-//        Assert.assertTrue(demoqaLandingPage.isUniqueElementDisplayed(), "Unique page element is not displayed");
-//        DemoqaLandingPage.clickWidgetsButton();
-//        BrowserActions.scroll(1000);
-//        DemoqaLandingPage.clickSliderButton();
-//        DemoqaWidgetsPage.moveSliderToZero();
-//        int random = randomInt;
-//        DemoqaWidgetsPage.moveSliderWithKeys(random);
-//        Assert.assertEquals(random, DemoqaWidgetsPage.getSliderValueInt(), "Slider value not equals to set value");
-//        BrowserActions.scroll(1000);
-//        DemoqaWidgetsPage.clickProgressBarButton();
-//        Assert.assertTrue(demoqaWidgetsPage.isUniqueElementDisplayed(), "Progress bar form is not open");
-//        BrowserActions.scroll(-1000);
-//        DemoqaWidgetsPage.clickStartStopButton();
-//        int Age = 30;
-//        DemoqaWidgetsPage.progressBarStopper(Age);
-//        Assert.assertTrue(Math.abs(DemoqaWidgetsPage.getCurrentProgressBarValue() - Age) <= 2,
-//                "Difference between set value and actual value is more then 2%");
-//
-//    }
+    @Test
+    public void SliderTest () {
+        BrowserActions.open(ConfigManager.getURL());
+        Assert.assertTrue(demoqaLandingPage.isUniqueElementDisplayed(), "Unique page element is not displayed");
+        demoqaLandingPage.getWidgetsButton().waitAndClick();
+        BrowserActions.scroll(1000);
+        demoqaLandingPage.getSliderButton().waitAndClick();
+        int random = randomInt;
+        demoqaWidgetsPage.getSlider().moveSliderWithArrowKeys(random, 25);
+        Assert.assertEquals(random, Parser.stringToInt(demoqaWidgetsPage.getSliderValueField().getAttribute("Value", "Get value")));
+        BrowserActions.scroll(1000);
+        demoqaWidgetsPage.getProgressBarButton().waitAndClick();
+        Assert.assertTrue(demoqaWidgetsPage.isUniqueElementDisplayed(), "Progress bar form is not open");
+        BrowserActions.scroll(-1000);
+        demoqaWidgetsPage.getStartStopButton().waitAndClick();
+        int Age = 30;
+        demoqaWidgetsPage.progressBarStopper(Age);
+        Assert.assertTrue(Math.abs(demoqaWidgetsPage.getCurrentProgressBarValue() - Age) <= 2,
+                "Difference between set value and actual value is more then 2%");
+
+    }
 }

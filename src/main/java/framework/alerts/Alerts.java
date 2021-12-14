@@ -11,13 +11,13 @@ public class Alerts{
         return DriverSingleton.getDriver().switchTo().alert().getText();
     }
 
-    public static void acceptAlert (String name) {
-        LoggerUtility.log.info(name);
+    public static void acceptAlert () {
+        LoggerUtility.log.info("Accept alert");
         DriverSingleton.getDriver().switchTo().alert().accept();
     }
 
-    public static void dismissAlert (String name) {
-        LoggerUtility.log.info(name);
+    public static void dismissAlert () {
+        LoggerUtility.log.info("Dismiss alert");
         DriverSingleton.getDriver().switchTo().alert().dismiss();
     }
 

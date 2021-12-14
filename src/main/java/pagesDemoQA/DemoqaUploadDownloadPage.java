@@ -12,14 +12,19 @@ public class DemoqaUploadDownloadPage extends BasePage {
         super(locator, name);
     }
 
-    public final Button downloadButton = new Button(By.xpath("//a[@id='downloadButton']"), "Download button");
-    public final TextField uploadFileButton = new TextField(By.xpath("//input[@id='uploadFile']"), "Upload button");
-    public final TextField uploadedFilePathTextField = new TextField(By.xpath("//p[@id='uploadedFilePath']"), "Uploaded file path");
+    private Button downloadButton = new Button(By.xpath("//a[@id='downloadButton']"), "Download button");
+    private TextField uploadFileButton = new TextField(By.xpath("//input[@id='uploadFile']"), "Upload button");
+    private TextField uploadedFilePathTextField = new TextField(By.xpath("//p[@id='uploadedFilePath']"), "Uploaded file path");
 
+    public Button getDownloadButton() {
+        return downloadButton;
+    }
 
+    public TextField getUploadFileButton() {
+        return uploadFileButton;
+    }
 
-//    public static void uploadFile() {
-//        TextField.sendKeys(uploadFileButton,"C:\\Users\\mkukhar\\Downloads\\sampleFile.jpeg", "Uploading file");
-//    }
-
+    public TextField getUploadedFilePathTextField() {
+        return uploadedFilePathTextField;
+    }
 }

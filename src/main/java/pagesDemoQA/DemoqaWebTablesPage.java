@@ -7,7 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import framework.basePage.BasePage;
 
-import javax.xml.soap.Text;
 import java.util.List;
 
 public class DemoqaWebTablesPage extends BasePage {
@@ -20,9 +19,9 @@ public class DemoqaWebTablesPage extends BasePage {
         super();
     }
 
-    public final Button addButton = new Button(By.xpath("//button[@id='addNewRecordButton']"), "Add new record button");
-    public final TextField newTableRow = new TextField(By.xpath("//div[@class='rt-tr-group'][4]"), "Add new record button");
-    public final Button deleteRecordButton = new Button(By.xpath("//span[@id='delete-record-4']"), "Add new record button");
+    private Button addButton = new Button(By.xpath("//button[@id='addNewRecordButton']"), "Add new record button");
+    private TextField newTableRow = new TextField(By.xpath("//div[@class='rt-tr-group'][4]"), "Add new record button");
+    private Button deleteRecordButton = new Button(By.xpath("//span[@id='delete-record-4']"), "Delete lats record button");
 
     public int getNotEmptyRecordCount() {
         List<WebElement> rows = BaseElement.findElements(By.xpath("//div[@class='rt-tr-group']"));
@@ -34,23 +33,34 @@ public class DemoqaWebTablesPage extends BasePage {
         } return len;
     }
 
+    public Button getAddButton() {
+        return addButton;
+    }
+
+    public TextField getNewTableRow() {
+        return newTableRow;
+    }
+
+    public Button getDeleteRecordButton() {
+        return deleteRecordButton;
+    }
 
     public static class RegistrationForm extends DemoqaWebTablesPage {
-        private final TextField firstNameField = new TextField(By.xpath("//input[@id='firstName']"), "First name text field");
-        private final TextField lastNameField = new TextField(By.xpath("//input[@id='lastName']"), "Last name text field");
-        private final TextField eMailField = new TextField(By.xpath("//input[@id='userEmail']"), "E-mail text field");
-        private final TextField ageField = new TextField(By.xpath("//input[@id='age']"), "Age text field");
-        private final TextField salaryField = new TextField(By.xpath("//input[@id='salary']"), "Salary text field");
-        private final TextField departmentField = new TextField(By.xpath("//input[@id='department']"), "Department text field");
-        private final Button submitButton = new Button(By.xpath("//button[@id='submit']"), "");
+        private static TextField firstNameField = new TextField(By.xpath("//input[@id='firstName']"), "First name text field");
+        private static TextField lastNameField = new TextField(By.xpath("//input[@id='lastName']"), "Last name text field");
+        private static TextField eMailField = new TextField(By.xpath("//input[@id='userEmail']"), "E-mail text field");
+        private static TextField ageField = new TextField(By.xpath("//input[@id='age']"), "Age text field");
+        private static TextField salaryField = new TextField(By.xpath("//input[@id='salary']"), "Salary text field");
+        private static TextField departmentField = new TextField(By.xpath("//input[@id='department']"), "Department text field");
+        private static Button submitButton = new Button(By.xpath("//button[@id='submit']"), "");
 
-        public void sendRecordDataInTable(String firstName, String lastName, String eMail, String age, String salary, String department) {
-            firstNameField.sendKeys("Send first name");
-            lastNameField.sendKeys("Send last name");
-            eMailField.sendKeys("Send E-mail");
-            ageField.sendKeys("Send age");
-            salaryField.sendKeys("Send salary");
-            departmentField.sendKeys("Send department");
+        public static void sendRecordDataInTable(String firstName, String lastName, String eMail, String age, String salary, String department) {
+            firstNameField.sendKeys(firstName);
+            lastNameField.sendKeys(lastName);
+            eMailField.sendKeys(eMail);
+            ageField.sendKeys(age);
+            salaryField.sendKeys(salary);
+            departmentField.sendKeys(department);
             submitButton.waitAndClick();
         }
 

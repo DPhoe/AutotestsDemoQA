@@ -1,6 +1,5 @@
 package pagesDemoQA;
 
-import framework.elements.Button;
 import framework.elements.Link;
 import org.openqa.selenium.By;
 import framework.basePage.BasePage;
@@ -11,6 +10,9 @@ public class DemoqaLinksPage extends BasePage {
         super(locator, name);
     }
 
-    public final Link simpleLink = new Link(By.xpath("//a[@id='simpleLink']"), "Home link");
+    private Link simpleLink = new Link(By.xpath("//a[@id='simpleLink']"), "Home link");
 
+    public Link getSimpleLink() {
+        return simpleLink;
+    }
 }

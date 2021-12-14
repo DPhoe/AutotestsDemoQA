@@ -24,9 +24,8 @@ public class TextField extends BaseElement {
 
     public String getText() {
         LoggerUtility.log.info(name);
-        WebElement getText = new WebDriverWait(DriverSingleton.getDriver(),
-                Duration.ofSeconds(ConfigManager.getExplicitWaitSec())).until(ExpectedConditions.visibilityOf(findElement(locator)));
-        return getText.getText();
+        return new WebDriverWait(DriverSingleton.getDriver(),
+                Duration.ofSeconds(ConfigManager.getExplicitWaitSec())).until(ExpectedConditions.visibilityOf(findElement(locator))).getText();
     }
 
 }

@@ -27,24 +27,23 @@ public class TablesTest extends BaseTest {
     }
 
 
-//    @Test (dataProvider = "data")
-//    public void IFrameTest (String firstName, String lastName, String eMail, String age, String salary, String department) {
-//        BrowserActions.open(ConfigManager.getURL());
-//        Assert.assertTrue(demoqaLandingPage.isUniqueElementDisplayed(), "Unique page element is not displayed");
-//        DemoqaLandingPage.clickElementsButton();
-//        DemoqaLandingPage.clickWebTablesButton();
-//        Assert.assertTrue(demoqaWebTablesPage.isUniqueElementDisplayed(), "Web tables form is not displayed");
-//        DemoqaWebTablesPage.clickAddButton();
-//        DemoqaWebTablesPage.RegistrationForm.sendRecordDataInTable(firstName, lastName, eMail, age, salary, department);
-//        DemoqaWebTablesPage.RegistrationForm.clickSubmitButton();
-//        Assert.assertTrue(DemoqaWebTablesPage.RegistrationForm.getFourthRowText().contains(firstName) &&
-//                DemoqaWebTablesPage.RegistrationForm.getFourthRowText().contains(lastName) &&
-//                DemoqaWebTablesPage.RegistrationForm.getFourthRowText().contains(eMail) &&
-//                DemoqaWebTablesPage.RegistrationForm.getFourthRowText().contains(age) &&
-//                DemoqaWebTablesPage.RegistrationForm.getFourthRowText().contains(salary) &&
-//                DemoqaWebTablesPage.RegistrationForm.getFourthRowText().contains(department), "Results in table not match entered data");
-//        int recordCount = DemoqaWebTablesPage.getNotEmptyRecordCount();
-//        DemoqaWebTablesPage.clickDeleteButton();
-//        Assert.assertTrue(DemoqaWebTablesPage.getNotEmptyRecordCount() < recordCount, "Record didn't deleted");
-//    }
+    @Test (dataProvider = "data")
+    public void IFrameTest (String firstName, String lastName, String eMail, String age, String salary, String department) {
+        BrowserActions.open(ConfigManager.getURL());
+        Assert.assertTrue(demoqaLandingPage.isUniqueElementDisplayed(), "Unique page element is not displayed");
+        demoqaLandingPage.getElementsButton().waitAndClick();
+        demoqaLandingPage.getWebTablesButton().waitAndClick();
+        Assert.assertTrue(demoqaWebTablesPage.isUniqueElementDisplayed(), "Web tables form is not displayed");
+        demoqaWebTablesPage.getAddButton().waitAndClick();
+        DemoqaWebTablesPage.RegistrationForm.sendRecordDataInTable(firstName, lastName, eMail, age, salary, department);
+        Assert.assertTrue(demoqaWebTablesPage.getNewTableRow().getText().contains(firstName) &&
+                demoqaWebTablesPage.getNewTableRow().getText().contains(lastName) &&
+                demoqaWebTablesPage.getNewTableRow().getText().contains(eMail) &&
+                demoqaWebTablesPage.getNewTableRow().getText().contains(age) &&
+                demoqaWebTablesPage.getNewTableRow().getText().contains(salary) &&
+                demoqaWebTablesPage.getNewTableRow().getText().contains(department), "Results in table not match entered data");
+        int recordCount = demoqaWebTablesPage.getNotEmptyRecordCount();
+        demoqaWebTablesPage.getDeleteRecordButton().waitAndClick();
+        Assert.assertTrue(demoqaWebTablesPage.getNotEmptyRecordCount() < recordCount, "Record didn't deleted");
+    }
 }

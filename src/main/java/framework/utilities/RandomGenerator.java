@@ -12,7 +12,8 @@ public class RandomGenerator {
         return string;
     }
 
+    private static final int randomNumberUpperLimit = 100;
     static Random randomNumber = new Random();
-    public static int randomInt = randomNumber.nextInt(100) + 1;
+    public static int randomInt = randomNumber.nextInt(randomNumberUpperLimit) + 1;
 
 }
