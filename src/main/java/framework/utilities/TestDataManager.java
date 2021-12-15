@@ -2,6 +2,8 @@ package framework.utilities;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Properties;
 
@@ -49,10 +51,10 @@ public class TestDataManager {
         Properties props = new Properties();
         props.load(reader);
         thirdRecord.add(props.getProperty("FirstName_3"));
-        thirdRecord.add(props.getProperty("LastName_2"));
+        thirdRecord.add(props.getProperty("LastName_3"));
         thirdRecord.add(props.getProperty("Email_3"));
         thirdRecord.add(props.getProperty("Age_3"));
-        thirdRecord.add(props.getProperty("Salary_2"));
+        thirdRecord.add(props.getProperty("Salary_3"));
         thirdRecord.add(props.getProperty("Department_3"));
         return thirdRecord;
     }
@@ -69,6 +71,17 @@ public class TestDataManager {
         Properties props = new Properties();
         props.load(reader);
         return  idTwo = props.getProperty("FrameIdTwo");
+    }
+
+    public static void test() throws Exception {
+        String file = "src/test/resources/UserRecords.json";
+        String json = readFileAsString(file);
+        System.out.println(json);
+    }
+
+    public static String readFileAsString(String file)throws Exception
+    {
+        return new String(Files.readAllBytes(Paths.get(file)));
     }
 
 

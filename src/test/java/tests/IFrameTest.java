@@ -2,6 +2,7 @@ package tests;
 
 import framework.baseTest.BaseTest;
 import framework.frames.Frames;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pagesDemoQA.DemoqaLandingPage;
@@ -17,14 +18,21 @@ public class IFrameTest extends BaseTest {
     @Test
     public void IFrameTest () throws IOException {
         BrowserActions.open(ConfigManager.getURL());
+        DemoqaLandingPage demoqaLandingPage =
+                new DemoqaLandingPage(By.xpath("//img[contains(@class, 'banner')]"), "DemoQA banner on landing page");
         Assert.assertTrue(demoqaLandingPage.isUniqueElementDisplayed(), "Unique page element is not displayed");
         demoqaLandingPage.getAlertWindowsFrameButton().waitAndClick();
         demoqaLandingPage.getNestedFramesButton().waitAndClick();
+        DemoqaNestedFramesPage demoqaNestedFramesPage =
+                new DemoqaNestedFramesPage(By.xpath("//div[@id='frame1Wrapper']"), "Nested frame wrapper");
         Assert.assertTrue(demoqaNestedFramesPage.isUniqueElementDisplayed(), "Nested Frame form is not displayed");
         Frames.switchToFrameByNameOrId("frame1", "Switch to parent frame");
-        Assert.assertEquals(demoqaNestedFramesPage.getParentFrameText().getText(), "Parent frame", "Parent frame text don't match expected one");
-        Frames.switchToFrameByIndex(TestDataManager.getChildFrameIndex(), "Switch to child iframe by index" + TestDataManager.getChildFrameIndex());
-        Assert.assertEquals(demoqaNestedFramesPage.getParentChildText().getText(), "Child Iframe", "Child frame text don't match expected one");
+        Assert.assertEquals(demoqaNestedFramesPage.getParentFrameText().getText(),
+                "Parent frame", "Parent frame text don't match expected one");
+        Frames.switchToFrameByIndex(TestDataManager.getChildFrameIndex(),
+                "Switch to child iframe by index" + TestDataManager.getChildFrameIndex());
+        Assert.assertEquals(demoqaNestedFramesPage.getParentChildText().getText(),
+                "Child Iframe", "Child frame text don't match expected one");
         Frames.switchToDefault("Switch to default page from frame");
         demoqaNestedFramesPage.getFramesButton().waitAndClick();
         Frames.switchToFrameByNameOrId(TestDataManager.getIDOne(), "Switch iframe by Id: " + TestDataManager.getIDOne());

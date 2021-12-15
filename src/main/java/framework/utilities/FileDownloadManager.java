@@ -1,17 +1,21 @@
 package framework.utilities;
 
+import org.openqa.selenium.support.ui.*;
+
 import java.io.File;
+import java.time.Duration;
 
 public class FileDownloadManager {
 
-    public static void waitForFileToBeDownloaded(String path, String fileName) throws InterruptedException {
-        File f = new File(path + fileName);
-        long filesize1;
-        long filesize2;
+    public static void waitForFileToBeDownloaded(String path, String fileName, long expectedSize) {
+        File file = new File(path + fileName);
+        long fileSizeActual;
         do {
-            filesize1 = f.length();
-            Thread.sleep(1000);
-            filesize2 = f.length();
-        } while (filesize2 != filesize1);
+            fileSizeActual = file.length();
+            Wait wait = new FluentWait(DriverSingleton.getDriver())
+                    .withTimeout(Duration.ofSeconds(60))
+                    .pollingEvery(Duration.ofMillis(1000));
+            wait.until(ExpectedConditions.urlContains("http"));
+        } while (fileSizeActual != expectedSize);
     }
 }

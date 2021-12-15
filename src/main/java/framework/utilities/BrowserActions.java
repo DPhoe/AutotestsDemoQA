@@ -26,9 +26,6 @@ public class BrowserActions {
         }
     }
 
-    public static void explicitWait() {
-        DriverSingleton.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(ConfigManager.getExplicitWaitSec()));
-    }
 
     public static void driverClose() {
         DriverSingleton.getDriver().close();
@@ -38,9 +35,6 @@ public class BrowserActions {
         DriverSingleton.getDriver().quit();
     }
 
-    public static void initDriver() {
-        DriverSingleton.getDriver().navigate().refresh();
-    }
 
     public static String getCurrentUTL(String name) {
         LoggerUtility.log.info(name);
@@ -79,7 +73,7 @@ public class BrowserActions {
         Set<String> windows = DriverSingleton.getDriver().getWindowHandles();
         for (String window : windows) {
             DriverSingleton.getDriver().switchTo().window(window);
-            if(DriverSingleton.getDriver().getWindowHandle() != parentWindow) {
+            if(DriverSingleton.getDriver().getWindowHandle().equals(parentWindow)) {
                 continue;
             }
             else break;

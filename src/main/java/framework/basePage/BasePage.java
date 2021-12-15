@@ -20,7 +20,7 @@ public abstract class BasePage {
 
     public boolean isUniqueElementDisplayed() {
         LoggerUtility.log.info(name);
-        if (BaseElement.findElements(locator).size() != 0) {
+        if (BaseElement.getElementListSize(locator) != 0) {
             return true;
         }
         return false;

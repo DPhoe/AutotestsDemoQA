@@ -2,20 +2,27 @@ package tests;
 
 import framework.alerts.Alerts;
 import framework.baseTest.BaseTest;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import framework.utilities.BrowserActions;
 import framework.utilities.ConfigManager;
 import framework.utilities.RandomGenerator;
+import pagesDemoQA.DemoqaAlertsPage;
+import pagesDemoQA.DemoqaLandingPage;
 
 public class AlertsTest extends BaseTest {
 
-    @Test
+    @Test (timeOut = 20000)
     public void AlertsTest () {;
         BrowserActions.open(ConfigManager.getURL());
+        DemoqaLandingPage demoqaLandingPage =
+                new DemoqaLandingPage(By.xpath("//img[contains(@class, 'banner')]"), "DemoQA banner on landing page");
         Assert.assertTrue(demoqaLandingPage.isUniqueElementDisplayed(), "Unique page element is not displayed");
         demoqaLandingPage.getAlertWindowsFrameButton().waitAndClick();
         demoqaLandingPage.getAlertButton().waitAndClick();
+        DemoqaAlertsPage demoqaAlertsPage =
+                new DemoqaAlertsPage(By.xpath("//span[contains(text(),'to see')]/ancestor::div[contains(@class, '12')]"), "Alerts form");
         Assert.assertTrue(demoqaAlertsPage.isUniqueElementDisplayed(), "Alert form is not displayed");
         demoqaAlertsPage.getSimpleAlertButton().waitAndClick();
         Assert.assertTrue(Alerts.isAlertPresent("Check is simple alert present"), "Alert is not present");

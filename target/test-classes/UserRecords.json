@@ -1,0 +1,44 @@
+{
+  "records": [
+    {
+      "firstName": "Jon",
+      "lastName": "Snow",
+      "email": "knownothing@gmail.com",
+      "age": "30",
+      "salary": "3000",
+      "department": "alpha"
+    },
+    {
+      "firstName": "Buttercup",
+      "lastName": "Cumbersnatch",
+      "email": "BudapestCandygram@mail.ru",
+      "age": "41",
+      "salary": "2000",
+      "department": "beta"
+    },
+    {
+      "firstName": "Jack",
+      "lastName": "Black",
+      "email": "sand@nudes.here",
+      "age": "77",
+      "salary": "9999",
+      "department": "High church"
+    },
+    {
+      "firstName": "Snow",
+      "lastName": "Snow",
+      "email": "kno@gmail.com",
+      "age": "32",
+      "salary": "2223",
+      "department": "alphabeta"
+    },
+    {
+      "firstName": "Jon",
+      "lastName": "Jack",
+      "email": "othing@gmail.com",
+      "age": "88",
+      "salary": "456546",
+      "department": "teta"
+    }
+  ]
+}

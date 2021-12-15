@@ -1,0 +1,1 @@
+{"uuid":"dbcc2157-593b-44ac-a18d-ca3e7f148d49","name":"tests.HandlesTest","children":["7781665b-c0a0-41a5-93d2-ee100d7dfffd"],"befores":[],"afters":[{"name":"browserCloseAfterTest","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1639572432136,"stop":1639572432914}],"start":1639572423438,"stop":1639572433008}

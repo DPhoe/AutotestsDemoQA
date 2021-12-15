@@ -28,21 +28,18 @@ public class DemoqaWidgetsPage extends BasePage {
         return sliderInteger;
     }
 
-
     public int getCurrentProgressBarValue() {
         String sliderText = DriverSingleton.getDriver().findElement(progressBarRole).getAttribute( "aria-valuenow");
         int sliderInteger = Parser.stringToInt(sliderText);
         return sliderInteger;
     }
 
+    //Timeout set with TestNG-annotations in test which using this method
     public void progressBarStopper(int Age) {
-        for (int i = 0; i < 100; i++) {
-            while (getCurrentProgressBarValue() < Age) {
+        while (getCurrentProgressBarValue() < Age) {
                 continue;
-            }
-            startStopButton.waitAndClick();
-            break;
         }
+        startStopButton.waitAndClick();
     }
 
     public Slider getSlider() {

@@ -1,13 +1,9 @@
 package pagesDemoQA;
 
-import framework.baseElement.BaseElement;
 import framework.elements.Button;
 import framework.elements.TextField;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import framework.basePage.BasePage;
-
-import java.util.List;
 
 public class DemoqaWebTablesPage extends BasePage {
 
@@ -20,29 +16,29 @@ public class DemoqaWebTablesPage extends BasePage {
     }
 
     private Button addButton = new Button(By.xpath("//button[@id='addNewRecordButton']"), "Add new record button");
-    private TextField newTableRow = new TextField(By.xpath("//div[@class='rt-tr-group'][4]"), "Add new record button");
-    private Button deleteRecordButton = new Button(By.xpath("//span[@id='delete-record-4']"), "Delete lats record button");
+    private TextField newTableRow;
+    private Button deleteRecordButton;
 
-    public int getNotEmptyRecordCount() {
-        List<WebElement> rows = BaseElement.findElements(By.xpath("//div[@class='rt-tr-group']"));
-        int len;
-        for (len = 0; len <= 10; len += 1) {
-            if (rows.get(len).getText().contains("@")) {
-                continue;
-            } else return len;
-        } return len;
+    private String createTableRowLocator(int index) {
+        String loc = String.format("//div[@class='rt-tr-group'][%d]", index);
+        return loc;
+    }
+
+    public TextField getNewTableRow(int index) {
+        return newTableRow = new TextField(By.xpath(createTableRowLocator(index)), "Add new record button");
+    }
+
+    private String createTableDeleteButtonLocator(int index) {
+        String loc = String.format("//span[@id='delete-record-%d']", index);
+        return loc;
+    }
+
+    public Button getDeleteRecordButton(int index) {
+        return deleteRecordButton = new Button(By.xpath(createTableDeleteButtonLocator(index)), "Delete lats record button");
     }
 
     public Button getAddButton() {
         return addButton;
-    }
-
-    public TextField getNewTableRow() {
-        return newTableRow;
-    }
-
-    public Button getDeleteRecordButton() {
-        return deleteRecordButton;
     }
 
     public static class RegistrationForm extends DemoqaWebTablesPage {

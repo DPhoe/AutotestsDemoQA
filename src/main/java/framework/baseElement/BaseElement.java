@@ -22,12 +22,16 @@ public abstract class BaseElement {
         this.name = name;
     }
 
-    public static WebElement findElement (By locator) {
+    protected static WebElement findElement (By locator) {
         return DriverSingleton.getDriver().findElement(locator);
     }
 
-    public static  List<WebElement> findElements (By locator) {
+    protected static  List<WebElement> findElements (By locator) {
         return DriverSingleton.getDriver().findElements(locator);
+    }
+
+    public static int getElementListSize (By locator){
+        return findElements(locator).size();
     }
 
     public void waitAndClick() {

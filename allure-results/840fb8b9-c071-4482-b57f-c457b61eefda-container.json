@@ -1,0 +1,1 @@
+{"uuid":"840fb8b9-c071-4482-b57f-c457b61eefda","name":"tests.SliderProgressTest","children":["f320994d-3fe9-46f2-8c1e-5fc50d530cbe"],"befores":[],"afters":[{"name":"browserCloseAfterTest","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1639574050304,"stop":1639574051081}],"start":1639574024434,"stop":1639574056670}
