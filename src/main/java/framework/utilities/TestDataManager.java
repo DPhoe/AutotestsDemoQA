@@ -1,5 +1,8 @@
 package framework.utilities;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -16,47 +19,22 @@ public class TestDataManager {
         return frameIndex;
     }
 
-    private static ArrayList<String> firstRecord = new ArrayList<String>();
-    public static ArrayList<String> getFirstRecord() throws IOException {
+    /**
+     Getting user record data from src/test/resources/TestData.properties by index
+     */
+    public static ArrayList<String> getRecordDataByIndexProperties(String index) throws IOException {
+        ArrayList<String> recordData = new ArrayList<>();
         FileReader reader = new FileReader("src/test/resources/TestData.properties");
         Properties props = new Properties();
         props.load(reader);
-        firstRecord.add(props.getProperty("FirstName_1"));
-        firstRecord.add(props.getProperty("LastName_1"));
-        firstRecord.add(props.getProperty("Email_1"));
-        firstRecord.add(props.getProperty("Age_1"));
-        firstRecord.add(props.getProperty("Salary_1"));
-        firstRecord.add(props.getProperty("Department_1"));
-        return firstRecord;
+        recordData.add(props.getProperty("FirstName_" + index + ""));
+        recordData.add(props.getProperty("LastName_" + index + ""));
+        recordData.add(props.getProperty("Email_" + index + ""));
+        recordData.add(props.getProperty("Age_" + index + ""));
+        recordData.add(props.getProperty("Salary_" + index + ""));
+        recordData.add(props.getProperty("Department_" + index + ""));
+        return recordData;
 
-    }
-
-    private static ArrayList<String> secondRecord = new ArrayList<String>();
-    public static ArrayList<String> getSecondRecord() throws IOException {
-        FileReader reader = new FileReader("src/test/resources/TestData.properties");
-        Properties props = new Properties();
-        props.load(reader);
-        secondRecord.add(props.getProperty("FirstName_2"));
-        secondRecord.add(props.getProperty("LastName_2"));
-        secondRecord.add(props.getProperty("Email_2"));
-        secondRecord.add(props.getProperty("Age_2"));
-        secondRecord.add(props.getProperty("Salary_2"));
-        secondRecord.add(props.getProperty("Department_2"));
-        return secondRecord;
-    }
-
-    private static ArrayList<String> thirdRecord = new ArrayList<String>();
-    public static ArrayList<String> getThirdRecord() throws IOException {
-        FileReader reader = new FileReader("src/test/resources/TestData.properties");
-        Properties props = new Properties();
-        props.load(reader);
-        thirdRecord.add(props.getProperty("FirstName_3"));
-        thirdRecord.add(props.getProperty("LastName_3"));
-        thirdRecord.add(props.getProperty("Email_3"));
-        thirdRecord.add(props.getProperty("Age_3"));
-        thirdRecord.add(props.getProperty("Salary_3"));
-        thirdRecord.add(props.getProperty("Department_3"));
-        return thirdRecord;
     }
 
     public static String getIDOne() throws IOException {
@@ -73,16 +51,39 @@ public class TestDataManager {
         return  idTwo = props.getProperty("FrameIdTwo");
     }
 
-    public static void test() throws Exception {
-        String file = "src/test/resources/UserRecords.json";
-        String json = readFileAsString(file);
-        System.out.println(json);
-    }
-
     public static String readFileAsString(String file)throws Exception
     {
         return new String(Files.readAllBytes(Paths.get(file)));
     }
+
+    /**
+     Getting user record data from src/test/resources/UserRecords.json by index
+     The worst realization you could ever imagine
+     */
+    public static ArrayList<String> getRecordDataByIndexJson(int index) throws Exception {
+        String file = "src/test/resources/UserRecords.json";
+        String json = readFileAsString(file);
+        Gson gson = new GsonBuilder()
+                .create();
+        UserRecordsPojo user = gson.fromJson(json, UserRecordsPojo.class);
+        String obj = user.getRecords().get(index).toString();
+        UserRecordsPojo user1 = gson.fromJson(obj, UserRecordsPojo.class);
+        ArrayList<String> recordData = new ArrayList<>();
+        recordData.add(user1.getFirstName());
+        recordData.add(user1.getLastName());
+        recordData.add(user1.getEmail());
+        recordData.add(user1.getAge());
+        recordData.add(user1.getSalary());
+        recordData.add(user1.getDepartment());
+        return recordData;
+    }
+
+    public static Object[] addDataToProviderByIndex (int index) throws Exception {
+        ArrayList<String> data = new ArrayList<>();
+        data.addAll(TestDataManager.getRecordDataByIndexJson(index));
+        return data.toArray();
+    }
+
 
 
 }

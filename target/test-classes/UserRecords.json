@@ -22,7 +22,7 @@
       "email": "sand@nudes.here",
       "age": "77",
       "salary": "9999",
-      "department": "High church"
+      "department": "High_Church"
     },
     {
       "firstName": "Snow",
@@ -39,6 +39,46 @@
       "age": "88",
       "salary": "456546",
       "department": "teta"
+    },
+    {
+      "firstName": "Jon",
+      "lastName": "Water",
+      "email": "knowall@@gmail.com",
+      "age": "30",
+      "salary": "3000",
+      "department": "evasion"
+    },
+    {
+      "firstName": "Battlefield",
+      "lastName": "Overwatch",
+      "email": "Battlefield@Overwatch.ru",
+      "age": "999",
+      "salary": "1",
+      "department": "Sherlock"
+    },
+    {
+      "firstName": "Queen",
+      "lastName": "Britannia",
+      "email": "Britannia@here.here",
+      "age": "bb",
+      "salary": "999999999",
+      "department": "Nope"
+    },
+    {
+      "firstName": "We",
+      "lastName": "You",
+      "email": "why@gmail.com",
+      "age": "44",
+      "salary": "aa",
+      "department": "emema"
+    },
+    {
+      "firstName": "Here",
+      "lastName": "There",
+      "email": "ong@gmilcom",
+      "age": "11",
+      "salary": "22",
+      "department": "11"
     }
   ]
 }

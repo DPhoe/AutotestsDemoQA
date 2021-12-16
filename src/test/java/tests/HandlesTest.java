@@ -17,16 +17,16 @@ public class HandlesTest extends BaseTest {
     public void HandlesTest () {
         BrowserActions.open(ConfigManager.getURL());
         DemoqaLandingPage demoqaLandingPage =
-                new DemoqaLandingPage(By.xpath("//img[contains(@class, 'banner')]"), "DemoQA banner on landing page");
+                new DemoqaLandingPage();
         Assert.assertTrue(demoqaLandingPage.isUniqueElementDisplayed(), "Unique page element is not displayed");
         demoqaLandingPage.getAlertWindowsFrameButton().waitAndClick();
         demoqaLandingPage.getBrowserWindowsButton().waitAndClick();
         DemoqaBrowserWindowsPage demoqaBrowserWindowsPage =
-                new DemoqaBrowserWindowsPage(By.xpath("//div[@id='browserWindows']"), "Browser window form");
+                new DemoqaBrowserWindowsPage();
         Assert.assertTrue(demoqaBrowserWindowsPage.isUniqueElementDisplayed(), "Browser window form is not displayed");
         demoqaBrowserWindowsPage.getNewTabButton().waitAndClick();
         BrowserActions.switchToTabWithContains("sample", "Switch to tab which contains 'sample'");
-        DemoqaSamplePage demoqaSamplePage = new DemoqaSamplePage(By.xpath("//h1"), "Sample page header");
+        DemoqaSamplePage demoqaSamplePage = new DemoqaSamplePage();
         Assert.assertTrue(demoqaSamplePage.isUniqueElementDisplayed(), "Sample page header is not displayed");
         BrowserActions.driverClose();
         BrowserActions.switchToTabWithContains("windows", "Switch to tab which contains 'windows'");
@@ -34,7 +34,7 @@ public class HandlesTest extends BaseTest {
         demoqaBrowserWindowsPage.getElementsButton().waitAndClick();
         demoqaBrowserWindowsPage.getLinksButton().waitAndClick();
         DemoqaLinksPage demoqaLinksPage =
-                new DemoqaLinksPage(By.xpath("//div[@id='linkWrapper']"), "Link wrapper on links page");
+                new DemoqaLinksPage();
         Assert.assertTrue(demoqaLinksPage.isUniqueElementDisplayed(),"Unique element is not displayed");
         String parentHandle = BrowserActions.getParentWindowHandle("Get parent window handle");
         demoqaLinksPage.getSimpleLink().waitAndClick();

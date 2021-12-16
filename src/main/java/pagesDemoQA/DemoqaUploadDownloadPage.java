@@ -8,13 +8,13 @@ import framework.basePage.BasePage;
 public class DemoqaUploadDownloadPage extends BasePage {
 
 
-    public DemoqaUploadDownloadPage(By locator, String name) {
-        super(locator, name);
+    public DemoqaUploadDownloadPage() {
+        super(By.xpath("//a[@id='downloadButton']"), "Download button on DemoQA download page");
     }
 
-    private Button downloadButton = new Button(By.xpath("//a[@id='downloadButton']"), "Download button");
-    private TextField uploadFileButton = new TextField(By.xpath("//input[@id='uploadFile']"), "Upload button");
-    private TextField uploadedFilePathTextField = new TextField(By.xpath("//p[@id='uploadedFilePath']"), "Uploaded file path");
+    private final Button downloadButton = new Button(By.xpath("//a[@id='downloadButton']"), "Download button");
+    private final TextField uploadFileButton = new TextField(By.xpath("//input[@id='uploadFile']"), "Upload button");
+    private final TextField uploadedFilePathTextField = new TextField(By.xpath("//p[@id='uploadedFilePath']"), "Uploaded file path");
 
     public Button getDownloadButton() {
         return downloadButton;

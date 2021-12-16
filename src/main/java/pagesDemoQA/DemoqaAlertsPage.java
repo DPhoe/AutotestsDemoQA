@@ -7,15 +7,15 @@ import framework.basePage.BasePage;
 
 public class DemoqaAlertsPage extends BasePage {
 
-    public DemoqaAlertsPage(By locator, String name) {
-        super(locator, name);
+    public DemoqaAlertsPage() {
+        super(By.xpath("//span[contains(text(),'to see')]/ancestor::div[contains(@class, '12')]"), "Alerts form");
     }
 
-    private Button simpleAlertButton = new Button(By.xpath("//button[@id='alertButton']"), "Simple alert button");
-    private Button confirmAlertButton = new Button(By.xpath("//button[@id='confirmButton']"), "Confirm alert button");
-    private TextField confirmResultField = new TextField(By.xpath("//span[@id='confirmResult']"), "Confirm result text field");
-    private Button promptAlertButton = new Button(By.xpath("//button[@id='promtButton']"), "Prompt alert button");
-    private TextField promptAlertResultField = new TextField(By.xpath("//span[@id='promptResult']"), "Prompt alert result text field");
+    private final Button simpleAlertButton = new Button(By.xpath("//button[@id='alertButton']"), "Simple alert button");
+    private final Button confirmAlertButton = new Button(By.xpath("//button[@id='confirmButton']"), "Confirm alert button");
+    private final TextField confirmResultField = new TextField(By.xpath("//span[@id='confirmResult']"), "Confirm result text field");
+    private final Button promptAlertButton = new Button(By.xpath("//button[@id='promtButton']"), "Prompt alert button");
+    private final TextField promptAlertResultField = new TextField(By.xpath("//span[@id='promptResult']"), "Prompt alert result text field");
 
     public Button getSimpleAlertButton() {
         return simpleAlertButton;

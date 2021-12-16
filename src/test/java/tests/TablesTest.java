@@ -2,7 +2,6 @@ package tests;
 
 import framework.baseTest.BaseTest;
 import framework.elements.Tables;
-import framework.utilities.DriverSingleton;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -13,33 +12,32 @@ import framework.utilities.BrowserActions;
 import framework.utilities.ConfigManager;
 import framework.utilities.TestDataManager;
 
-import java.io.IOException;
-import java.util.ArrayList;
-
 public class TablesTest extends BaseTest {
 
     @DataProvider(name = "data")
-    public Object[][] dpMethod() throws IOException {
-        ArrayList<String> data = new ArrayList<>();
-        data.addAll(TestDataManager.getFirstRecord());
-        ArrayList<String> dataSecond = new ArrayList<>();
-        dataSecond.addAll(TestDataManager.getSecondRecord());
-        ArrayList<String> dataThird = new ArrayList<>();
-        dataThird.addAll(TestDataManager.getThirdRecord());
-        return new Object[][] {data.toArray(), dataSecond.toArray(), dataThird.toArray()};
+    public Object[][] dpMethod() throws Exception {
+        return new Object[][] {TestDataManager.addDataToProviderByIndex(0),
+                TestDataManager.addDataToProviderByIndex(1),
+                TestDataManager.addDataToProviderByIndex(2),
+                TestDataManager.addDataToProviderByIndex(3),
+                TestDataManager.addDataToProviderByIndex(4),
+                TestDataManager.addDataToProviderByIndex(5),
+                TestDataManager.addDataToProviderByIndex(6),
+                TestDataManager.addDataToProviderByIndex(7),
+                TestDataManager.addDataToProviderByIndex(8),
+                TestDataManager.addDataToProviderByIndex(9)};
     }
 
-
     @Test (dataProvider = "data")
-    public void IFrameTest (String firstName, String lastName, String eMail, String age, String salary, String department) {
+    public void TablesDDTTest (String firstName, String lastName, String eMail, String age, String salary, String department) {
         BrowserActions.open(ConfigManager.getURL());
         DemoqaLandingPage demoqaLandingPage =
-                new DemoqaLandingPage(By.xpath("//img[contains(@class, 'banner')]"), "DemoQA banner on landing page");
+                new DemoqaLandingPage();
         Assert.assertTrue(demoqaLandingPage.isUniqueElementDisplayed(), "Unique page element is not displayed");
         demoqaLandingPage.getElementsButton().waitAndClick();
         demoqaLandingPage.getWebTablesButton().waitAndClick();
         DemoqaWebTablesPage demoqaWebTablesPage =
-                new DemoqaWebTablesPage(By.xpath("//div[@class='web-tables-wrapper']"), "DemoQA web tablet wrapper");
+                new DemoqaWebTablesPage();
         Assert.assertTrue(demoqaWebTablesPage.isUniqueElementDisplayed(), "Web tables form is not displayed");
         demoqaWebTablesPage.getAddButton().waitAndClick();
         DemoqaWebTablesPage.RegistrationForm.sendRecordDataInTable(firstName, lastName, eMail, age, salary, department);

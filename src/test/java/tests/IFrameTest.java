@@ -19,12 +19,12 @@ public class IFrameTest extends BaseTest {
     public void IFrameTest () throws IOException {
         BrowserActions.open(ConfigManager.getURL());
         DemoqaLandingPage demoqaLandingPage =
-                new DemoqaLandingPage(By.xpath("//img[contains(@class, 'banner')]"), "DemoQA banner on landing page");
+                new DemoqaLandingPage();
         Assert.assertTrue(demoqaLandingPage.isUniqueElementDisplayed(), "Unique page element is not displayed");
         demoqaLandingPage.getAlertWindowsFrameButton().waitAndClick();
         demoqaLandingPage.getNestedFramesButton().waitAndClick();
         DemoqaNestedFramesPage demoqaNestedFramesPage =
-                new DemoqaNestedFramesPage(By.xpath("//div[@id='frame1Wrapper']"), "Nested frame wrapper");
+                new DemoqaNestedFramesPage();
         Assert.assertTrue(demoqaNestedFramesPage.isUniqueElementDisplayed(), "Nested Frame form is not displayed");
         Frames.switchToFrameByNameOrId("frame1", "Switch to parent frame");
         Assert.assertEquals(demoqaNestedFramesPage.getParentFrameText().getText(),

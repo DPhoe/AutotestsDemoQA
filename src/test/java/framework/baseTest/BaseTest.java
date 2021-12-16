@@ -1,11 +1,9 @@
 package framework.baseTest;
 
 import framework.utilities.DriverSingleton;
-import org.openqa.selenium.By;
 import org.testng.annotations.*;
 import framework.utilities.BrowserActions;
 import framework.utilities.ConfigManager;
-import pagesDemoQA.*;
 
 import java.io.IOException;
 

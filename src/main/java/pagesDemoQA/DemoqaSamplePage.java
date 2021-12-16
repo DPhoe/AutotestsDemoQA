@@ -5,7 +5,7 @@ import framework.basePage.BasePage;
 
 public class DemoqaSamplePage extends BasePage {
 
-    public DemoqaSamplePage(By locator, String name) {
-        super(locator, name);
+    public DemoqaSamplePage() {
+        super(By.xpath("//h1"), "Sample page header");
     }
 }

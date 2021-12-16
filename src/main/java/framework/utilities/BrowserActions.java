@@ -9,6 +9,7 @@ import java.util.Set;
 public class BrowserActions {
 
     public static void setWindowSize() {
+        LoggerUtility.log.info("Set browser window size: " + ConfigManager.getWindowSizes() + "and position: " + ConfigManager.getWindowPosition());
         if (ConfigManager.getEnablePresetWindowSize()) {
             DriverSingleton.getDriver().manage().window().setSize(ConfigManager.getWindowSizes());
             DriverSingleton.getDriver().manage().window().setPosition(ConfigManager.getWindowPosition());
@@ -21,6 +22,7 @@ public class BrowserActions {
     }
 
     public static void windowMaximize() {
+        LoggerUtility.log.info("Maximize browser window");
         if (ConfigManager.getWindowMaximize()) {
             DriverSingleton.getDriver().manage().window().maximize();
         }
@@ -82,6 +84,7 @@ public class BrowserActions {
     }
 
     public static void scroll(int value) {
+        LoggerUtility.log.info("Scrolled with JS: " + value);
         JavascriptExecutor js = (JavascriptExecutor) DriverSingleton.getDriver();
         js.executeScript("window.scrollBy(0," + value + ")");
     }

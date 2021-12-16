@@ -6,14 +6,14 @@ import framework.basePage.BasePage;
 
 public class DemoqaBrowserWindowsPage extends BasePage {
 
-    public DemoqaBrowserWindowsPage(By locator, String name) {
-        super(locator, name);
+    public DemoqaBrowserWindowsPage() {
+        super(By.xpath("//div[@id='browserWindows']"), "Browser window form");
     }
 
-    private Button newTabButton = new Button(By.xpath("//button[@id='tabButton']"), "New tab button");
-    private Button newWindowButton = new Button(By.xpath("//button[@id='messageWindowButton']"), "New window button");
-    private Button newWindowMessageButton = new Button(By.xpath("//button[@id='messageWindowButton']"), "New window message button");
-    private Button elementsButton = new Button(By.xpath("//div[contains(text(),'men')]/parent::div"), "Elements button");
+    private final Button newTabButton = new Button(By.xpath("//button[@id='tabButton']"), "New tab button");
+    private final Button newWindowButton = new Button(By.xpath("//button[@id='messageWindowButton']"), "New window button");
+    private final Button newWindowMessageButton = new Button(By.xpath("//button[@id='messageWindowButton']"), "New window message button");
+    private final Button elementsButton = new Button(By.xpath("//div[contains(text(),'men')]/parent::div"), "Elements button");
 
     public Button getNewTabButton() {
         return newTabButton;

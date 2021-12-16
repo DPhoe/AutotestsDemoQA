@@ -18,14 +18,14 @@ public class SliderProgressTest extends BaseTest {
     public void SliderTest () {
         BrowserActions.open(ConfigManager.getURL());
         DemoqaLandingPage demoqaLandingPage =
-                new DemoqaLandingPage(By.xpath("//img[contains(@class, 'banner')]"), "DemoQA banner on landing page");
+                new DemoqaLandingPage();
         Assert.assertTrue(demoqaLandingPage.isUniqueElementDisplayed(), "Unique page element is not displayed");
         demoqaLandingPage.getWidgetsButton().waitAndClick();
         BrowserActions.scroll(1000);
         demoqaLandingPage.getSliderButton().waitAndClick();
         int random = randomInt;
         DemoqaWidgetsPage demoqaWidgetsPage =
-                new DemoqaWidgetsPage(By.xpath("//div[@id='progressBarContainer']"), "Progress bar container");
+                new DemoqaWidgetsPage();
         demoqaWidgetsPage.getSlider().moveSliderWithArrowKeys(random, 25);
         Assert.assertEquals(random, Parser.stringToInt(demoqaWidgetsPage.getSliderValueField().getAttribute("Value",
                 "Get value")));

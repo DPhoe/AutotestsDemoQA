@@ -7,19 +7,19 @@ import framework.basePage.BasePage;
 public class DemoqaLandingPage extends BasePage {
 
 
-    public DemoqaLandingPage(By locator, String name) {
-        super(locator, name);
+    public DemoqaLandingPage() {
+        super(By.xpath("//img[contains(@class, 'banner')]"), "DemoQA banner on landing page");
     }
 
-    private Button alertWindowsFrameButton = new Button(By.xpath("//h5[contains(text(), 'lerts')]/ancestor::div[contains(@class,'mt-4')]"), "Alert windows and frame button");
-    private Button alertButton = new Button(By.xpath("//span[contains(text(),'lerts')]"), "Alert button");
-    private Button nestedFramesButton = new Button(By.xpath("//span[contains(text(), 'Nested')]/parent::li"), "Nested frames button");
-    private Button elementsButton = new Button(By.xpath("//h5[contains(text(), 'ments')]/ancestor::div[contains(@class,'mt-4')]"), "Elements button");
-    private Button webTablesButton = new Button(By.xpath("//span[contains(text(), 'Tables')]/parent::li"), "Web tables button");
-    private Button browserWindowsButton = new Button(By.xpath("//span[contains(text(),'indo')]"), "Browser window button");
-    private Button widgetsButton = new Button(By.xpath("//h5[contains(text(), 'gets')]/ancestor::div[contains(@class,'mt-4')]"), "Widgets button");
-    private Button sliderButton = new Button(By.xpath("//span[contains(text(),'lid')]/parent::li"), "Slider button");
-    private Button uploadDownloadButton = new Button(By.xpath("//span[contains(text(),'load')]/parent::li"), "Download upload button");
+    private final Button alertWindowsFrameButton = new Button(By.xpath("//h5[contains(text(), 'lerts')]/ancestor::div[contains(@class,'mt-4')]"), "Alert windows and frame button");
+    private final Button alertButton = new Button(By.xpath("//span[contains(text(),'lerts')]"), "Alert button");
+    private final Button nestedFramesButton = new Button(By.xpath("//span[contains(text(), 'Nested')]/parent::li"), "Nested frames button");
+    private final Button elementsButton = new Button(By.xpath("//h5[contains(text(), 'ments')]/ancestor::div[contains(@class,'mt-4')]"), "Elements button");
+    private final Button webTablesButton = new Button(By.xpath("//span[contains(text(), 'Tables')]/parent::li"), "Web tables button");
+    private final Button browserWindowsButton = new Button(By.xpath("//span[contains(text(),'indo')]"), "Browser window button");
+    private final Button widgetsButton = new Button(By.xpath("//h5[contains(text(), 'gets')]/ancestor::div[contains(@class,'mt-4')]"), "Widgets button");
+    private final Button sliderButton = new Button(By.xpath("//span[contains(text(),'lid')]/parent::li"), "Slider button");
+    private final Button uploadDownloadButton = new Button(By.xpath("//span[contains(text(),'load')]/parent::li"), "Download upload button");
 
     public Button getAlertWindowsFrameButton() {
         return alertWindowsFrameButton;

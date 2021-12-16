@@ -1,21 +1,20 @@
 package pagesDemoQA;
 
 import framework.elements.Button;
+import framework.elements.Tables;
 import framework.elements.TextField;
 import org.openqa.selenium.By;
 import framework.basePage.BasePage;
 
 public class DemoqaWebTablesPage extends BasePage {
 
-    public DemoqaWebTablesPage(By locator, String name) {
-        super(locator, name);
-    }
-
     public DemoqaWebTablesPage() {
-        super();
+        super(By.xpath("//div[@class='web-tables-wrapper']"), "DemoQA web tablet wrapper");
     }
 
-    private Button addButton = new Button(By.xpath("//button[@id='addNewRecordButton']"), "Add new record button");
+    private Tables table = new Tables(By.xpath("//div[@class='rt-tr-group']"), "User records table");
+
+    private final Button addButton = new Button(By.xpath("//button[@id='addNewRecordButton']"), "Add new record button");
     private TextField newTableRow;
     private Button deleteRecordButton;
 
@@ -42,13 +41,14 @@ public class DemoqaWebTablesPage extends BasePage {
     }
 
     public static class RegistrationForm extends DemoqaWebTablesPage {
-        private static TextField firstNameField = new TextField(By.xpath("//input[@id='firstName']"), "First name text field");
-        private static TextField lastNameField = new TextField(By.xpath("//input[@id='lastName']"), "Last name text field");
-        private static TextField eMailField = new TextField(By.xpath("//input[@id='userEmail']"), "E-mail text field");
-        private static TextField ageField = new TextField(By.xpath("//input[@id='age']"), "Age text field");
-        private static TextField salaryField = new TextField(By.xpath("//input[@id='salary']"), "Salary text field");
-        private static TextField departmentField = new TextField(By.xpath("//input[@id='department']"), "Department text field");
-        private static Button submitButton = new Button(By.xpath("//button[@id='submit']"), "");
+
+        private static final TextField firstNameField = new TextField(By.xpath("//input[@id='firstName']"), "First name text field");
+        private static final TextField lastNameField = new TextField(By.xpath("//input[@id='lastName']"), "Last name text field");
+        private static final TextField eMailField = new TextField(By.xpath("//input[@id='userEmail']"), "E-mail text field");
+        private static final TextField ageField = new TextField(By.xpath("//input[@id='age']"), "Age text field");
+        private static final TextField salaryField = new TextField(By.xpath("//input[@id='salary']"), "Salary text field");
+        private static final TextField departmentField = new TextField(By.xpath("//input[@id='department']"), "Department text field");
+        private static final Button submitButton = new Button(By.xpath("//button[@id='submit']"), "");
 
         public static void sendRecordDataInTable(String firstName, String lastName, String eMail, String age, String salary, String department) {
             firstNameField.sendKeys(firstName);

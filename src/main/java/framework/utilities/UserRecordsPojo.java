@@ -1,5 +1,7 @@
 package framework.utilities;
 
+import java.util.ArrayList;
+
 public class UserRecordsPojo {
 
     private String firstName;
@@ -8,6 +10,7 @@ public class UserRecordsPojo {
     private String age;
     private String salary;
     private String department;
+    private ArrayList records;
 
     public UserRecordsPojo(String firstName, String lastName, String email, String age, String salary, String department) {
         this.firstName = firstName;
@@ -23,6 +26,14 @@ public class UserRecordsPojo {
 
     public String getFirstName() {
         return firstName;
+    }
+
+    public ArrayList getRecords() {
+        return records;
+    }
+
+    public void setRecords(ArrayList records) {
+        this.records = records;
     }
 
     public void setFirstName(String firstName) {

@@ -17,12 +17,12 @@ public class AlertsTest extends BaseTest {
     public void AlertsTest () {;
         BrowserActions.open(ConfigManager.getURL());
         DemoqaLandingPage demoqaLandingPage =
-                new DemoqaLandingPage(By.xpath("//img[contains(@class, 'banner')]"), "DemoQA banner on landing page");
+                new DemoqaLandingPage();
         Assert.assertTrue(demoqaLandingPage.isUniqueElementDisplayed(), "Unique page element is not displayed");
         demoqaLandingPage.getAlertWindowsFrameButton().waitAndClick();
         demoqaLandingPage.getAlertButton().waitAndClick();
         DemoqaAlertsPage demoqaAlertsPage =
-                new DemoqaAlertsPage(By.xpath("//span[contains(text(),'to see')]/ancestor::div[contains(@class, '12')]"), "Alerts form");
+                new DemoqaAlertsPage();
         Assert.assertTrue(demoqaAlertsPage.isUniqueElementDisplayed(), "Alert form is not displayed");
         demoqaAlertsPage.getSimpleAlertButton().waitAndClick();
         Assert.assertTrue(Alerts.isAlertPresent("Check is simple alert present"), "Alert is not present");
