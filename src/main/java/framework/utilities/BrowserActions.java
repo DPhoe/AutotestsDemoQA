@@ -1,6 +1,6 @@
 package framework.utilities;
 
-
+import framework.utilities.driverFactory.DriverSingleton;
 import org.openqa.selenium.JavascriptExecutor;
 
 import java.time.Duration;
@@ -9,7 +9,9 @@ import java.util.Set;
 public class BrowserActions {
 
     public static void setWindowSize() {
-        LoggerUtility.log.info("Set browser window size: " + ConfigManager.getWindowSizes() + "and position: " + ConfigManager.getWindowPosition());
+        if (ConfigManager.getEnablePresetWindowSize()) {
+            LoggerUtility.log.info("Set browser window size: " + ConfigManager.getWindowSizes() + "and position: " + ConfigManager.getWindowPosition());
+        }
         if (ConfigManager.getEnablePresetWindowSize()) {
             DriverSingleton.getDriver().manage().window().setSize(ConfigManager.getWindowSizes());
             DriverSingleton.getDriver().manage().window().setPosition(ConfigManager.getWindowPosition());
@@ -17,7 +19,7 @@ public class BrowserActions {
     }
 
     public static void open(String url) {
-        LoggerUtility.log.info(System.lineSeparator() + "Opening page with URL: " + url);
+        LoggerUtility.log.info("Opening page with URL: " + url);
         DriverSingleton.getDriver().get(url);
     }
 
@@ -28,15 +30,9 @@ public class BrowserActions {
         }
     }
 
-
     public static void driverClose() {
         DriverSingleton.getDriver().close();
     }
-
-    public static void driverQuit() {
-        DriverSingleton.getDriver().quit();
-    }
-
 
     public static String getCurrentUTL(String name) {
         LoggerUtility.log.info(name);

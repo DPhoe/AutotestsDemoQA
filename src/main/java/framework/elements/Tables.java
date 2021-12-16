@@ -11,7 +11,7 @@ public class Tables extends BaseElement {
         super(locator, name);
     }
 
-    public static int getNotEmptyTableRowCountBySymbol(By locator, String symbol) {
+    public int getNotEmptyTableRowCountBySymbol(By locator, String symbol) {
         List<WebElement> rows = findElements(locator);
         int len;
         for (len = 0; len <= 10; len += 1) {

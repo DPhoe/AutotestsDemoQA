@@ -9,13 +9,10 @@ public abstract class BasePage {
     protected String name;
     protected By locator;
 
-    public BasePage (By locator, String name) {
+    protected BasePage (By locator, String name) {
         this.locator = locator;
         this.name = name;
 
-    }
-
-    public BasePage() {
     }
 
     public boolean isUniqueElementDisplayed() {

@@ -6,7 +6,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import framework.utilities.ConfigManager;
-import framework.utilities.DriverSingleton;
+import framework.utilities.driverFactory.DriverSingleton;
 import framework.utilities.LoggerUtility;
 
 import java.time.Duration;
@@ -17,7 +17,7 @@ public abstract class BaseElement {
     protected By locator;
     protected String name;
 
-    public BaseElement (By locator, String name) {
+    protected BaseElement (By locator, String name) {
         this.locator = locator;
         this.name = name;
     }

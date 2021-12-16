@@ -1,5 +1,6 @@
 package framework.utilities;
 
+import framework.utilities.driverFactory.DriverSingleton;
 import org.openqa.selenium.support.ui.*;
 
 import java.io.File;

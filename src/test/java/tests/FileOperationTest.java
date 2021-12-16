@@ -2,7 +2,6 @@ package tests;
 
 import framework.baseTest.BaseTest;
 import framework.utilities.FileDownloadManager;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import framework.utilities.BrowserActions;

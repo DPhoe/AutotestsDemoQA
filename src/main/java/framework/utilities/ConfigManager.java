@@ -52,13 +52,11 @@ public class ConfigManager {
             booleanConfig.put( "closeAfterTest",true);
         }
         else booleanConfig.put("closeAfterTest",false);
-
         return booleanConfig;
     }
 
-    private static String URL;
     public static String getURL() {
-        return URL = stringConfigs.get("URL");
+        return stringConfigs.get("URL");
     }
 
     public static String getBrowserName() {

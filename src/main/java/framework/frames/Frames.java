@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import framework.utilities.ConfigManager;
-import framework.utilities.DriverSingleton;
+import framework.utilities.driverFactory.DriverSingleton;
 import framework.utilities.LoggerUtility;
 
 import java.time.Duration;
@@ -27,7 +27,7 @@ public class Frames{
         DriverSingleton.getDriver().switchTo().frame(element);
     }
 
-    public static void switchToDefault(String name) {
+    public static void switchToDefaultContent(String name) {
         LoggerUtility.log.info(name);
         DriverSingleton.getDriver().switchTo().defaultContent();
     }

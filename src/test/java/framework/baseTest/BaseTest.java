@@ -1,6 +1,6 @@
 package framework.baseTest;
 
-import framework.utilities.DriverSingleton;
+import framework.utilities.driverFactory.DriverSingleton;
 import org.testng.annotations.*;
 import framework.utilities.BrowserActions;
 import framework.utilities.ConfigManager;
@@ -11,10 +11,10 @@ public class BaseTest {
 
     @BeforeMethod
     public void windowSize() throws IOException {
-        DriverSingleton.setDriverToNull();
         ConfigManager.getStringConfigs();
         ConfigManager.getIntConfig();
         ConfigManager.getBooleanConfig();
+        DriverSingleton.getDriver();
         BrowserActions.windowMaximize();
         BrowserActions.setWindowSize();
         BrowserActions.setImplicitWait();
@@ -23,7 +23,7 @@ public class BaseTest {
     @AfterMethod(alwaysRun = true)
     public void browserCloseAfterTest() {
         if (ConfigManager.getCloseAfterTest()) {
-            BrowserActions.driverQuit();
+            DriverSingleton.driverQuit();
             DriverSingleton.setDriverToNull();
         }
     }

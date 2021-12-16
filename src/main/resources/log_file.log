@@ -17658,3 +17658,1256 @@ Opening page with URL: https://demoqa.com/
 2021-12-16 15:52:40 INFO  - DemoQA banner on landing page
 2021-12-16 15:52:41 INFO  - Switch to parent window by handle
 2021-12-16 15:52:41 INFO  - Link wrapper on links page
+2021-12-16 17:27:57 INFO  - Maximize browser window
+2021-12-16 17:28:01 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:28:01 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:28:03 INFO  - DemoQA banner on landing page
+2021-12-16 17:28:03 INFO  - Elements button
+2021-12-16 17:28:03 INFO  - Web tables button
+2021-12-16 17:28:03 INFO  - DemoQA web tablet wrapper
+2021-12-16 17:28:03 INFO  - Add new record button
+2021-12-16 17:28:03 INFO  - First name text field
+2021-12-16 17:28:03 INFO  - Last name text field
+2021-12-16 17:28:03 INFO  - E-mail text field
+2021-12-16 17:28:03 INFO  - Age text field
+2021-12-16 17:28:04 INFO  - Salary text field
+2021-12-16 17:28:04 INFO  - Department text field
+2021-12-16 17:28:04 INFO  - 
+2021-12-16 17:28:04 INFO  - Add new record button
+2021-12-16 17:28:04 INFO  - Add new record button
+2021-12-16 17:28:04 INFO  - Add new record button
+2021-12-16 17:28:04 INFO  - Add new record button
+2021-12-16 17:28:04 INFO  - Add new record button
+2021-12-16 17:28:04 INFO  - Add new record button
+2021-12-16 17:28:04 INFO  - Delete lats record button
+2021-12-16 17:28:05 INFO  - Maximize browser window
+2021-12-16 17:28:06 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:28:06 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:28:08 INFO  - DemoQA banner on landing page
+2021-12-16 17:28:08 INFO  - Elements button
+2021-12-16 17:28:08 INFO  - Web tables button
+2021-12-16 17:28:08 INFO  - DemoQA web tablet wrapper
+2021-12-16 17:28:08 INFO  - Add new record button
+2021-12-16 17:28:08 INFO  - First name text field
+2021-12-16 17:28:08 INFO  - Last name text field
+2021-12-16 17:28:08 INFO  - E-mail text field
+2021-12-16 17:28:09 INFO  - Maximize browser window
+2021-12-16 17:44:53 INFO  - Maximize browser window
+2021-12-16 17:44:57 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:44:57 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:44:59 INFO  - DemoQA banner on landing page
+2021-12-16 17:44:59 INFO  - Alert windows and frame button
+2021-12-16 17:44:59 INFO  - Alert button
+2021-12-16 17:44:59 INFO  - Alerts form
+2021-12-16 17:44:59 INFO  - Simple alert button
+2021-12-16 17:44:59 INFO  - Check is simple alert present
+2021-12-16 17:44:59 INFO  - Get alert text
+2021-12-16 17:44:59 INFO  - Is simple alert present
+2021-12-16 17:44:59 INFO  - Accept alert
+2021-12-16 17:44:59 INFO  - Check is alert present
+2021-12-16 17:44:59 INFO  - Confirm alert button
+2021-12-16 17:44:59 INFO  - Get alert text
+2021-12-16 17:44:59 INFO  - Accept alert
+2021-12-16 17:44:59 INFO  - Confirm result text field
+2021-12-16 17:44:59 INFO  - Confirm result text field
+2021-12-16 17:44:59 INFO  - Prompt alert button
+2021-12-16 17:44:59 INFO  - Get alert text
+2021-12-16 17:44:59 INFO  - Send random generated text to alert
+2021-12-16 17:44:59 INFO  - Accept alert
+2021-12-16 17:44:59 INFO  - Prompt alert result text field
+2021-12-16 17:45:00 INFO  - Maximize browser window
+2021-12-16 17:45:02 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:45:02 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:45:03 INFO  - DemoQA banner on landing page
+2021-12-16 17:45:03 INFO  - Elements button
+2021-12-16 17:45:03 INFO  - Scrolled with JS: 1000
+2021-12-16 17:45:03 INFO  - Download upload button
+2021-12-16 17:45:04 INFO  - Download button on DemoQA download page
+2021-12-16 17:45:04 INFO  - Download button
+2021-12-16 17:45:09 INFO  - Maximize browser window
+2021-12-16 17:45:11 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:45:11 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:45:12 INFO  - DemoQA banner on landing page
+2021-12-16 17:45:12 INFO  - Widgets button
+2021-12-16 17:45:12 INFO  - Scrolled with JS: 1000
+2021-12-16 17:45:12 INFO  - Slider button
+2021-12-16 17:45:13 INFO  - Get Value attribute
+2021-12-16 17:45:13 INFO  - Get Value attribute
+2021-12-16 17:45:13 INFO  - Get Value attribute
+2021-12-16 17:45:13 INFO  - Get Value attribute
+2021-12-16 17:45:13 INFO  - Get value
+2021-12-16 17:45:13 INFO  - Scrolled with JS: 1000
+2021-12-16 17:45:13 INFO  - Progress bar button
+2021-12-16 17:45:13 INFO  - Progress bar container
+2021-12-16 17:45:13 INFO  - Scrolled with JS: -1000
+2021-12-16 17:45:13 INFO  - Start & stop button
+2021-12-16 17:45:16 INFO  - Start & stop button
+2021-12-16 17:45:17 INFO  - Maximize browser window
+2021-12-16 17:45:18 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:45:18 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:45:19 INFO  - DemoQA banner on landing page
+2021-12-16 17:45:19 INFO  - Maximize browser window
+2021-12-16 17:53:20 INFO  - Maximize browser window
+2021-12-16 17:53:23 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:53:24 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:53:25 INFO  - DemoQA banner on landing page
+2021-12-16 17:53:25 INFO  - Alert windows and frame button
+2021-12-16 17:53:26 INFO  - Browser window button
+2021-12-16 17:53:26 INFO  - Browser window form
+2021-12-16 17:53:26 INFO  - New tab button
+2021-12-16 17:53:26 INFO  - Switch to tab which contains 'sample'
+2021-12-16 17:53:26 INFO  - Sample page header
+2021-12-16 17:53:26 INFO  - Switch to tab which contains 'windows'
+2021-12-16 17:53:26 INFO  - Browser window form
+2021-12-16 17:53:26 INFO  - Elements button
+2021-12-16 17:53:26 INFO  - Links button
+2021-12-16 17:53:27 INFO  - Link wrapper on links page
+2021-12-16 17:53:27 INFO  - Get parent window handle
+2021-12-16 17:53:27 INFO  - Home link
+2021-12-16 17:53:27 INFO  - Switch to another then parent window by handle
+2021-12-16 17:53:27 INFO  - DemoQA banner on landing page
+2021-12-16 17:53:27 INFO  - Switch to parent window by handle
+2021-12-16 17:53:27 INFO  - Link wrapper on links page
+2021-12-16 17:53:28 INFO  - Maximize browser window
+2021-12-16 17:53:29 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:53:29 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:53:31 INFO  - DemoQA banner on landing page
+2021-12-16 17:53:31 INFO  - Alert windows and frame button
+2021-12-16 17:53:31 INFO  - Alert button
+2021-12-16 17:53:31 INFO  - Alerts form
+2021-12-16 17:53:31 INFO  - Simple alert button
+2021-12-16 17:53:31 INFO  - Check is simple alert present
+2021-12-16 17:53:31 INFO  - Get alert text
+2021-12-16 17:53:31 INFO  - Is simple alert present
+2021-12-16 17:53:31 INFO  - Accept alert
+2021-12-16 17:53:31 INFO  - Check is alert present
+2021-12-16 17:53:31 INFO  - Confirm alert button
+2021-12-16 17:53:32 INFO  - Get alert text
+2021-12-16 17:53:32 INFO  - Accept alert
+2021-12-16 17:53:32 INFO  - Confirm result text field
+2021-12-16 17:53:32 INFO  - Confirm result text field
+2021-12-16 17:53:32 INFO  - Prompt alert button
+2021-12-16 17:53:32 INFO  - Get alert text
+2021-12-16 17:53:32 INFO  - Send random generated text to alert
+2021-12-16 17:53:32 INFO  - Accept alert
+2021-12-16 17:53:32 INFO  - Prompt alert result text field
+2021-12-16 17:53:32 INFO  - Maximize browser window
+2021-12-16 17:53:34 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:53:34 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:53:35 INFO  - DemoQA banner on landing page
+2021-12-16 17:53:35 INFO  - Alert windows and frame button
+2021-12-16 17:53:36 INFO  - Nested frames button
+2021-12-16 17:53:36 INFO  - Nested frame wrapper
+2021-12-16 17:53:36 INFO  - Switch to parent frame
+2021-12-16 17:53:41 INFO  - Parent frame text field
+2021-12-16 17:53:41 INFO  - Switch to child iframe by index0
+2021-12-16 17:53:41 INFO  - Get frame text
+2021-12-16 17:53:41 INFO  - Switch to default page from frame
+2021-12-16 17:53:41 INFO  - Frames button
+2021-12-16 17:53:41 INFO  - Switch iframe by Id: frame1
+2021-12-16 17:53:46 INFO  - In frame text field
+2021-12-16 17:53:46 INFO  - Switch to default page from frame
+2021-12-16 17:53:46 INFO  - Switch iframe by Id: frame2
+2021-12-16 17:53:51 INFO  - In frame text field
+2021-12-16 17:53:52 INFO  - Maximize browser window
+2021-12-16 17:53:53 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:53:53 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:53:55 INFO  - DemoQA banner on landing page
+2021-12-16 17:53:55 INFO  - Widgets button
+2021-12-16 17:53:55 INFO  - Scrolled with JS: 1000
+2021-12-16 17:53:55 INFO  - Slider button
+2021-12-16 17:53:55 INFO  - Get Value attribute
+2021-12-16 17:53:55 INFO  - Get Value attribute
+2021-12-16 17:53:55 INFO  - Get Value attribute
+2021-12-16 17:53:55 INFO  - Get Value attribute
+2021-12-16 17:53:55 INFO  - Get Value attribute
+2021-12-16 17:53:55 INFO  - Get Value attribute
+2021-12-16 17:53:55 INFO  - Get Value attribute
+2021-12-16 17:53:55 INFO  - Get Value attribute
+2021-12-16 17:53:55 INFO  - Get Value attribute
+2021-12-16 17:53:55 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:56 INFO  - Get Value attribute
+2021-12-16 17:53:57 INFO  - Get Value attribute
+2021-12-16 17:53:57 INFO  - Get Value attribute
+2021-12-16 17:53:57 INFO  - Get Value attribute
+2021-12-16 17:53:57 INFO  - Get Value attribute
+2021-12-16 17:53:57 INFO  - Get Value attribute
+2021-12-16 17:53:57 INFO  - Get Value attribute
+2021-12-16 17:53:57 INFO  - Get Value attribute
+2021-12-16 17:53:57 INFO  - Get Value attribute
+2021-12-16 17:53:57 INFO  - Get Value attribute
+2021-12-16 17:53:57 INFO  - Get Value attribute
+2021-12-16 17:53:57 INFO  - Get Value attribute
+2021-12-16 17:53:57 INFO  - Get Value attribute
+2021-12-16 17:53:57 INFO  - Get Value attribute
+2021-12-16 17:53:57 INFO  - Get value
+2021-12-16 17:53:57 INFO  - Scrolled with JS: 1000
+2021-12-16 17:53:57 INFO  - Progress bar button
+2021-12-16 17:53:57 INFO  - Progress bar container
+2021-12-16 17:53:57 INFO  - Scrolled with JS: -1000
+2021-12-16 17:53:57 INFO  - Start & stop button
+2021-12-16 17:54:00 INFO  - Start & stop button
+2021-12-16 17:54:01 INFO  - Maximize browser window
+2021-12-16 17:54:02 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:54:02 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:54:03 INFO  - DemoQA banner on landing page
+2021-12-16 17:54:03 INFO  - Elements button
+2021-12-16 17:54:03 INFO  - Scrolled with JS: 1000
+2021-12-16 17:54:03 INFO  - Download upload button
+2021-12-16 17:54:04 INFO  - Download button on DemoQA download page
+2021-12-16 17:54:04 INFO  - Download button
+2021-12-16 17:54:09 INFO  - Maximize browser window
+2021-12-16 17:54:11 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:54:11 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:54:12 INFO  - DemoQA banner on landing page
+2021-12-16 17:54:12 INFO  - Elements button
+2021-12-16 17:54:12 INFO  - Web tables button
+2021-12-16 17:54:12 INFO  - DemoQA web tablet wrapper
+2021-12-16 17:54:12 INFO  - Add new record button
+2021-12-16 17:54:13 INFO  - First name text field
+2021-12-16 17:54:13 INFO  - Last name text field
+2021-12-16 17:54:13 INFO  - E-mail text field
+2021-12-16 17:54:13 INFO  - Age text field
+2021-12-16 17:54:13 INFO  - Salary text field
+2021-12-16 17:54:13 INFO  - Department text field
+2021-12-16 17:54:13 INFO  - 
+2021-12-16 17:54:13 INFO  - Add new record button
+2021-12-16 17:54:13 INFO  - Add new record button
+2021-12-16 17:54:13 INFO  - Add new record button
+2021-12-16 17:54:13 INFO  - Add new record button
+2021-12-16 17:54:13 INFO  - Add new record button
+2021-12-16 17:54:13 INFO  - Add new record button
+2021-12-16 17:54:13 INFO  - Delete lats record button
+2021-12-16 17:54:14 INFO  - Maximize browser window
+2021-12-16 17:54:15 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:54:15 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:54:17 INFO  - DemoQA banner on landing page
+2021-12-16 17:54:17 INFO  - Elements button
+2021-12-16 17:54:17 INFO  - Web tables button
+2021-12-16 17:54:17 INFO  - DemoQA web tablet wrapper
+2021-12-16 17:54:17 INFO  - Add new record button
+2021-12-16 17:54:17 INFO  - First name text field
+2021-12-16 17:54:17 INFO  - Last name text field
+2021-12-16 17:54:18 INFO  - E-mail text field
+2021-12-16 17:54:18 INFO  - Age text field
+2021-12-16 17:54:18 INFO  - Salary text field
+2021-12-16 17:54:18 INFO  - Department text field
+2021-12-16 17:54:18 INFO  - 
+2021-12-16 17:54:18 INFO  - Add new record button
+2021-12-16 17:54:18 INFO  - Add new record button
+2021-12-16 17:54:18 INFO  - Add new record button
+2021-12-16 17:54:18 INFO  - Add new record button
+2021-12-16 17:54:18 INFO  - Add new record button
+2021-12-16 17:54:18 INFO  - Add new record button
+2021-12-16 17:54:18 INFO  - Delete lats record button
+2021-12-16 17:54:19 INFO  - Maximize browser window
+2021-12-16 17:54:20 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:54:20 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:54:22 INFO  - DemoQA banner on landing page
+2021-12-16 17:54:22 INFO  - Elements button
+2021-12-16 17:54:22 INFO  - Web tables button
+2021-12-16 17:54:22 INFO  - DemoQA web tablet wrapper
+2021-12-16 17:54:22 INFO  - Add new record button
+2021-12-16 17:54:22 INFO  - First name text field
+2021-12-16 17:54:22 INFO  - Last name text field
+2021-12-16 17:54:22 INFO  - E-mail text field
+2021-12-16 17:54:22 INFO  - Age text field
+2021-12-16 17:54:22 INFO  - Salary text field
+2021-12-16 17:54:22 INFO  - Department text field
+2021-12-16 17:54:23 INFO  - 
+2021-12-16 17:54:23 INFO  - Add new record button
+2021-12-16 17:54:23 INFO  - Add new record button
+2021-12-16 17:54:23 INFO  - Add new record button
+2021-12-16 17:54:23 INFO  - Add new record button
+2021-12-16 17:54:23 INFO  - Add new record button
+2021-12-16 17:54:23 INFO  - Add new record button
+2021-12-16 17:54:23 INFO  - Delete lats record button
+2021-12-16 17:54:24 INFO  - Maximize browser window
+2021-12-16 17:54:25 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:54:25 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:54:27 INFO  - DemoQA banner on landing page
+2021-12-16 17:54:27 INFO  - Elements button
+2021-12-16 17:54:27 INFO  - Web tables button
+2021-12-16 17:54:27 INFO  - DemoQA web tablet wrapper
+2021-12-16 17:54:27 INFO  - Add new record button
+2021-12-16 17:54:27 INFO  - First name text field
+2021-12-16 17:54:27 INFO  - Last name text field
+2021-12-16 17:54:27 INFO  - E-mail text field
+2021-12-16 17:54:27 INFO  - Age text field
+2021-12-16 17:54:27 INFO  - Salary text field
+2021-12-16 17:54:27 INFO  - Department text field
+2021-12-16 17:54:27 INFO  - 
+2021-12-16 17:54:28 INFO  - Add new record button
+2021-12-16 17:54:28 INFO  - Add new record button
+2021-12-16 17:54:28 INFO  - Add new record button
+2021-12-16 17:54:28 INFO  - Add new record button
+2021-12-16 17:54:28 INFO  - Add new record button
+2021-12-16 17:54:28 INFO  - Add new record button
+2021-12-16 17:54:28 INFO  - Delete lats record button
+2021-12-16 17:54:28 INFO  - Maximize browser window
+2021-12-16 17:54:30 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:54:30 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:54:32 INFO  - DemoQA banner on landing page
+2021-12-16 17:54:32 INFO  - Elements button
+2021-12-16 17:54:32 INFO  - Web tables button
+2021-12-16 17:54:32 INFO  - DemoQA web tablet wrapper
+2021-12-16 17:54:32 INFO  - Add new record button
+2021-12-16 17:54:32 INFO  - First name text field
+2021-12-16 17:54:32 INFO  - Last name text field
+2021-12-16 17:54:32 INFO  - E-mail text field
+2021-12-16 17:54:32 INFO  - Age text field
+2021-12-16 17:54:32 INFO  - Salary text field
+2021-12-16 17:54:32 INFO  - Department text field
+2021-12-16 17:54:32 INFO  - 
+2021-12-16 17:54:33 INFO  - Add new record button
+2021-12-16 17:54:33 INFO  - Add new record button
+2021-12-16 17:54:33 INFO  - Add new record button
+2021-12-16 17:54:33 INFO  - Add new record button
+2021-12-16 17:54:33 INFO  - Add new record button
+2021-12-16 17:54:33 INFO  - Add new record button
+2021-12-16 17:54:33 INFO  - Delete lats record button
+2021-12-16 17:54:33 INFO  - Maximize browser window
+2021-12-16 17:54:35 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:54:35 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:54:37 INFO  - DemoQA banner on landing page
+2021-12-16 17:54:37 INFO  - Elements button
+2021-12-16 17:54:37 INFO  - Web tables button
+2021-12-16 17:54:37 INFO  - DemoQA web tablet wrapper
+2021-12-16 17:54:37 INFO  - Add new record button
+2021-12-16 17:54:37 INFO  - First name text field
+2021-12-16 17:54:37 INFO  - Last name text field
+2021-12-16 17:54:37 INFO  - E-mail text field
+2021-12-16 17:54:37 INFO  - Age text field
+2021-12-16 17:54:37 INFO  - Salary text field
+2021-12-16 17:54:37 INFO  - Department text field
+2021-12-16 17:54:37 INFO  - 
+2021-12-16 17:54:37 INFO  - Add new record button
+2021-12-16 17:54:38 INFO  - Maximize browser window
+2021-12-16 17:54:39 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:54:39 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:54:41 INFO  - DemoQA banner on landing page
+2021-12-16 17:54:41 INFO  - Elements button
+2021-12-16 17:54:41 INFO  - Web tables button
+2021-12-16 17:54:41 INFO  - DemoQA web tablet wrapper
+2021-12-16 17:54:41 INFO  - Add new record button
+2021-12-16 17:54:41 INFO  - First name text field
+2021-12-16 17:54:42 INFO  - Last name text field
+2021-12-16 17:54:42 INFO  - E-mail text field
+2021-12-16 17:54:42 INFO  - Age text field
+2021-12-16 17:54:42 INFO  - Salary text field
+2021-12-16 17:54:42 INFO  - Department text field
+2021-12-16 17:54:42 INFO  - 
+2021-12-16 17:54:42 INFO  - Add new record button
+2021-12-16 17:54:42 INFO  - Add new record button
+2021-12-16 17:54:42 INFO  - Add new record button
+2021-12-16 17:54:42 INFO  - Add new record button
+2021-12-16 17:54:43 INFO  - Maximize browser window
+2021-12-16 17:54:44 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:54:44 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:54:46 INFO  - DemoQA banner on landing page
+2021-12-16 17:54:46 INFO  - Elements button
+2021-12-16 17:54:46 INFO  - Web tables button
+2021-12-16 17:54:46 INFO  - DemoQA web tablet wrapper
+2021-12-16 17:54:46 INFO  - Add new record button
+2021-12-16 17:54:46 INFO  - First name text field
+2021-12-16 17:54:46 INFO  - Last name text field
+2021-12-16 17:54:46 INFO  - E-mail text field
+2021-12-16 17:54:46 INFO  - Age text field
+2021-12-16 17:54:46 INFO  - Salary text field
+2021-12-16 17:54:46 INFO  - Department text field
+2021-12-16 17:54:46 INFO  - 
+2021-12-16 17:54:47 INFO  - Add new record button
+2021-12-16 17:54:47 INFO  - Maximize browser window
+2021-12-16 17:54:49 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:54:49 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:54:50 INFO  - DemoQA banner on landing page
+2021-12-16 17:54:50 INFO  - Elements button
+2021-12-16 17:54:50 INFO  - Web tables button
+2021-12-16 17:54:51 INFO  - DemoQA web tablet wrapper
+2021-12-16 17:54:51 INFO  - Add new record button
+2021-12-16 17:54:51 INFO  - First name text field
+2021-12-16 17:54:51 INFO  - Last name text field
+2021-12-16 17:54:51 INFO  - E-mail text field
+2021-12-16 17:54:51 INFO  - Age text field
+2021-12-16 17:54:51 INFO  - Salary text field
+2021-12-16 17:54:51 INFO  - Department text field
+2021-12-16 17:54:51 INFO  - 
+2021-12-16 17:54:51 INFO  - Add new record button
+2021-12-16 17:54:52 INFO  - Maximize browser window
+2021-12-16 17:54:53 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:54:53 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:54:57 INFO  - DemoQA banner on landing page
+2021-12-16 17:54:57 INFO  - Elements button
+2021-12-16 17:54:57 INFO  - Web tables button
+2021-12-16 17:54:57 INFO  - DemoQA web tablet wrapper
+2021-12-16 17:54:57 INFO  - Add new record button
+2021-12-16 17:54:57 INFO  - First name text field
+2021-12-16 17:54:57 INFO  - Last name text field
+2021-12-16 17:54:57 INFO  - E-mail text field
+2021-12-16 17:54:57 INFO  - Age text field
+2021-12-16 17:54:58 INFO  - Salary text field
+2021-12-16 17:54:58 INFO  - Department text field
+2021-12-16 17:54:58 INFO  - 
+2021-12-16 17:54:58 INFO  - Add new record button
+2021-12-16 17:59:48 INFO  - Maximize browser window
+2021-12-16 17:59:51 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:59:51 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:59:53 INFO  - DemoQA banner on landing page
+2021-12-16 17:59:53 INFO  - Elements button
+2021-12-16 17:59:53 INFO  - Web tables button
+2021-12-16 17:59:53 INFO  - DemoQA web tablet wrapper
+2021-12-16 17:59:53 INFO  - Add new record button
+2021-12-16 17:59:53 INFO  - First name text field
+2021-12-16 17:59:53 INFO  - Last name text field
+2021-12-16 17:59:53 INFO  - E-mail text field
+2021-12-16 17:59:53 INFO  - Age text field
+2021-12-16 17:59:54 INFO  - Salary text field
+2021-12-16 17:59:54 INFO  - Department text field
+2021-12-16 17:59:54 INFO  - 
+2021-12-16 17:59:54 INFO  - Add new record button
+2021-12-16 17:59:54 INFO  - Add new record button
+2021-12-16 17:59:54 INFO  - Add new record button
+2021-12-16 17:59:54 INFO  - Add new record button
+2021-12-16 17:59:54 INFO  - Add new record button
+2021-12-16 17:59:54 INFO  - Add new record button
+2021-12-16 17:59:54 INFO  - Delete lats record button
+2021-12-16 17:59:55 INFO  - Maximize browser window
+2021-12-16 17:59:56 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 17:59:56 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 17:59:58 INFO  - DemoQA banner on landing page
+2021-12-16 17:59:58 INFO  - Elements button
+2021-12-16 17:59:58 INFO  - Web tables button
+2021-12-16 17:59:58 INFO  - DemoQA web tablet wrapper
+2021-12-16 17:59:58 INFO  - Add new record button
+2021-12-16 17:59:58 INFO  - First name text field
+2021-12-16 17:59:58 INFO  - Last name text field
+2021-12-16 17:59:58 INFO  - E-mail text field
+2021-12-16 17:59:58 INFO  - Age text field
+2021-12-16 17:59:59 INFO  - Salary text field
+2021-12-16 17:59:59 INFO  - Department text field
+2021-12-16 17:59:59 INFO  - 
+2021-12-16 17:59:59 INFO  - Add new record button
+2021-12-16 17:59:59 INFO  - Add new record button
+2021-12-16 17:59:59 INFO  - Add new record button
+2021-12-16 17:59:59 INFO  - Add new record button
+2021-12-16 17:59:59 INFO  - Add new record button
+2021-12-16 17:59:59 INFO  - Add new record button
+2021-12-16 17:59:59 INFO  - Delete lats record button
+2021-12-16 18:00:00 INFO  - Maximize browser window
+2021-12-16 18:00:01 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 18:00:01 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 18:00:03 INFO  - DemoQA banner on landing page
+2021-12-16 18:00:03 INFO  - Elements button
+2021-12-16 18:00:03 INFO  - Web tables button
+2021-12-16 18:00:03 INFO  - DemoQA web tablet wrapper
+2021-12-16 18:00:03 INFO  - Add new record button
+2021-12-16 18:00:03 INFO  - First name text field
+2021-12-16 18:00:03 INFO  - Last name text field
+2021-12-16 18:00:03 INFO  - E-mail text field
+2021-12-16 18:00:03 INFO  - Age text field
+2021-12-16 18:00:03 INFO  - Salary text field
+2021-12-16 18:00:03 INFO  - Department text field
+2021-12-16 18:00:04 INFO  - 
+2021-12-16 18:00:04 INFO  - Add new record button
+2021-12-16 18:00:04 INFO  - Add new record button
+2021-12-16 18:00:04 INFO  - Add new record button
+2021-12-16 18:00:04 INFO  - Add new record button
+2021-12-16 18:00:04 INFO  - Add new record button
+2021-12-16 18:00:04 INFO  - Add new record button
+2021-12-16 18:00:04 INFO  - Delete lats record button
+2021-12-16 18:00:05 INFO  - Maximize browser window
+2021-12-16 18:00:06 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 18:00:06 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 18:00:08 INFO  - DemoQA banner on landing page
+2021-12-16 18:00:08 INFO  - Elements button
+2021-12-16 18:00:08 INFO  - Web tables button
+2021-12-16 18:00:08 INFO  - DemoQA web tablet wrapper
+2021-12-16 18:00:08 INFO  - Add new record button
+2021-12-16 18:00:08 INFO  - First name text field
+2021-12-16 18:00:08 INFO  - Last name text field
+2021-12-16 18:00:08 INFO  - E-mail text field
+2021-12-16 18:00:09 INFO  - Age text field
+2021-12-16 18:00:09 INFO  - Salary text field
+2021-12-16 18:00:09 INFO  - Department text field
+2021-12-16 18:00:09 INFO  - 
+2021-12-16 18:00:09 INFO  - Add new record button
+2021-12-16 18:00:09 INFO  - Add new record button
+2021-12-16 18:00:09 INFO  - Add new record button
+2021-12-16 18:00:09 INFO  - Add new record button
+2021-12-16 18:00:09 INFO  - Add new record button
+2021-12-16 18:00:09 INFO  - Add new record button
+2021-12-16 18:00:09 INFO  - Delete lats record button
+2021-12-16 18:00:10 INFO  - Maximize browser window
+2021-12-16 18:00:11 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 18:00:11 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 18:00:12 INFO  - DemoQA banner on landing page
+2021-12-16 18:00:13 INFO  - Maximize browser window
+2021-12-16 18:17:45 INFO  - Set driver to null
+2021-12-16 18:17:45 INFO  - Maximize browser window
+2021-12-16 18:17:45 INFO  - Creating driver for browser: Opera
+2021-12-16 18:17:48 INFO  - Set browser window size: (1000, 1000)and position: (0, 0)
+2021-12-16 18:17:48 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 18:17:51 INFO  - DemoQA banner on landing page
+2021-12-16 18:17:51 INFO  - Alert windows and frame button
+2021-12-16 18:17:51 INFO  - Alert button
+2021-12-16 18:17:51 INFO  - Alerts form
+2021-12-16 18:17:51 INFO  - Simple alert button
+2021-12-16 18:17:51 INFO  - Check is simple alert present
+2021-12-16 18:17:51 INFO  - Get alert text
+2021-12-16 18:17:51 INFO  - Is simple alert present
+2021-12-16 18:17:51 INFO  - Accept alert
+2021-12-16 18:17:51 INFO  - Check is alert present
+2021-12-16 18:17:51 INFO  - Confirm alert button
+2021-12-16 18:17:51 INFO  - Get alert text
+2021-12-16 18:17:51 INFO  - Accept alert
+2021-12-16 18:17:51 INFO  - Confirm result text field
+2021-12-16 18:17:51 INFO  - Confirm result text field
+2021-12-16 18:17:51 INFO  - Prompt alert button
+2021-12-16 18:17:51 INFO  - Get alert text
+2021-12-16 18:17:51 INFO  - Send random generated text to alert
+2021-12-16 18:17:51 INFO  - Accept alert
+2021-12-16 18:17:51 INFO  - Prompt alert result text field
+2021-12-16 18:17:52 INFO  - Set driver to null
+2021-12-16 18:19:33 INFO  - Set driver to null
+2021-12-16 18:19:33 INFO  - Maximize browser window
+2021-12-16 18:19:33 INFO  - Creating driver for browser: Opera
+2021-12-16 18:19:36 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 18:19:38 INFO  - DemoQA banner on landing page
+2021-12-16 18:19:38 INFO  - Alert windows and frame button
+2021-12-16 18:19:38 INFO  - Alert button
+2021-12-16 18:19:38 INFO  - Alerts form
+2021-12-16 18:19:38 INFO  - Simple alert button
+2021-12-16 18:19:38 INFO  - Check is simple alert present
+2021-12-16 18:19:38 INFO  - Get alert text
+2021-12-16 18:19:38 INFO  - Is simple alert present
+2021-12-16 18:19:38 INFO  - Accept alert
+2021-12-16 18:19:38 INFO  - Check is alert present
+2021-12-16 18:19:38 INFO  - Confirm alert button
+2021-12-16 18:19:38 INFO  - Get alert text
+2021-12-16 18:19:38 INFO  - Accept alert
+2021-12-16 18:19:38 INFO  - Confirm result text field
+2021-12-16 18:19:38 INFO  - Confirm result text field
+2021-12-16 18:19:38 INFO  - Prompt alert button
+2021-12-16 18:19:38 INFO  - Get alert text
+2021-12-16 18:19:38 INFO  - Send random generated text to alert
+2021-12-16 18:19:38 INFO  - Accept alert
+2021-12-16 18:19:38 INFO  - Prompt alert result text field
+2021-12-16 18:19:39 INFO  - Set driver to null
+2021-12-16 18:21:18 INFO  - Creating driver for browser: Opera
+2021-12-16 18:21:21 INFO  - Maximize browser window
+2021-12-16 18:21:21 INFO  - 
+Opening page with URL: https://demoqa.com/
+2021-12-16 18:21:23 INFO  - DemoQA banner on landing page
+2021-12-16 18:21:23 INFO  - Alert windows and frame button
+2021-12-16 18:21:23 INFO  - Alert button
+2021-12-16 18:21:23 INFO  - Alerts form
+2021-12-16 18:21:23 INFO  - Simple alert button
+2021-12-16 18:21:23 INFO  - Check is simple alert present
+2021-12-16 18:21:23 INFO  - Get alert text
+2021-12-16 18:21:23 INFO  - Is simple alert present
+2021-12-16 18:21:23 INFO  - Accept alert
+2021-12-16 18:21:23 INFO  - Check is alert present
+2021-12-16 18:21:23 INFO  - Confirm alert button
+2021-12-16 18:21:23 INFO  - Get alert text
+2021-12-16 18:21:23 INFO  - Accept alert
+2021-12-16 18:21:23 INFO  - Confirm result text field
+2021-12-16 18:21:23 INFO  - Confirm result text field
+2021-12-16 18:21:23 INFO  - Prompt alert button
+2021-12-16 18:21:23 INFO  - Get alert text
+2021-12-16 18:21:23 INFO  - Send random generated text to alert
+2021-12-16 18:21:23 INFO  - Accept alert
+2021-12-16 18:21:23 INFO  - Prompt alert result text field
+2021-12-16 18:21:24 INFO  - Set driver to null
+2021-12-16 18:22:16 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:22:19 INFO  - Maximize browser window
+2021-12-16 18:22:19 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:22:20 INFO  - DemoQA banner on landing page
+2021-12-16 18:22:20 INFO  - Alert windows and frame button
+2021-12-16 18:22:21 INFO  - Alert button
+2021-12-16 18:22:21 INFO  - Alerts form
+2021-12-16 18:22:21 INFO  - Simple alert button
+2021-12-16 18:22:21 INFO  - Check is simple alert present
+2021-12-16 18:22:25 INFO  - Set driver to null
+2021-12-16 18:22:29 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:22:31 INFO  - Maximize browser window
+2021-12-16 18:22:32 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:22:33 INFO  - DemoQA banner on landing page
+2021-12-16 18:22:33 INFO  - Alert windows and frame button
+2021-12-16 18:22:33 INFO  - Alert button
+2021-12-16 18:22:33 INFO  - Alerts form
+2021-12-16 18:22:33 INFO  - Simple alert button
+2021-12-16 18:22:34 INFO  - Check is simple alert present
+2021-12-16 18:22:34 INFO  - Get alert text
+2021-12-16 18:22:34 INFO  - Is simple alert present
+2021-12-16 18:22:34 INFO  - Accept alert
+2021-12-16 18:22:37 INFO  - Set driver to null
+2021-12-16 18:22:41 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:22:44 INFO  - Maximize browser window
+2021-12-16 18:22:44 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:22:46 INFO  - DemoQA banner on landing page
+2021-12-16 18:22:46 INFO  - Alert windows and frame button
+2021-12-16 18:22:46 INFO  - Alert button
+2021-12-16 18:22:46 INFO  - Alerts form
+2021-12-16 18:22:46 INFO  - Simple alert button
+2021-12-16 18:22:46 INFO  - Check is simple alert present
+2021-12-16 18:22:46 INFO  - Get alert text
+2021-12-16 18:22:46 INFO  - Is simple alert present
+2021-12-16 18:22:46 INFO  - Accept alert
+2021-12-16 18:22:46 INFO  - Check is alert present
+2021-12-16 18:22:46 INFO  - Confirm alert button
+2021-12-16 18:22:46 INFO  - Get alert text
+2021-12-16 18:22:46 INFO  - Accept alert
+2021-12-16 18:22:46 INFO  - Confirm result text field
+2021-12-16 18:22:46 INFO  - Confirm result text field
+2021-12-16 18:22:46 INFO  - Prompt alert button
+2021-12-16 18:22:46 INFO  - Get alert text
+2021-12-16 18:22:46 INFO  - Send random generated text to alert
+2021-12-16 18:22:46 INFO  - Accept alert
+2021-12-16 18:22:46 INFO  - Prompt alert result text field
+2021-12-16 18:22:47 INFO  - Set driver to null
+2021-12-16 18:24:12 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:24:14 INFO  - Maximize browser window
+2021-12-16 18:24:15 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:24:16 INFO  - DemoQA banner on landing page
+2021-12-16 18:24:16 INFO  - Alert windows and frame button
+2021-12-16 18:24:16 INFO  - Alert button
+2021-12-16 18:24:16 INFO  - Alerts form
+2021-12-16 18:24:16 INFO  - Simple alert button
+2021-12-16 18:24:16 INFO  - Check is simple alert present
+2021-12-16 18:24:16 INFO  - Get alert text
+2021-12-16 18:24:16 INFO  - Is simple alert present
+2021-12-16 18:24:16 INFO  - Accept alert
+2021-12-16 18:24:16 INFO  - Check is alert present
+2021-12-16 18:24:16 INFO  - Confirm alert button
+2021-12-16 18:24:17 INFO  - Get alert text
+2021-12-16 18:24:17 INFO  - Accept alert
+2021-12-16 18:24:17 INFO  - Confirm result text field
+2021-12-16 18:24:17 INFO  - Confirm result text field
+2021-12-16 18:24:17 INFO  - Prompt alert button
+2021-12-16 18:24:17 INFO  - Get alert text
+2021-12-16 18:24:17 INFO  - Send random generated text to alert
+2021-12-16 18:24:17 INFO  - Accept alert
+2021-12-16 18:24:17 INFO  - Prompt alert result text field
+2021-12-16 18:24:17 INFO  - Quiting driver
+2021-12-16 18:24:17 INFO  - Set driver to null
+2021-12-16 18:25:17 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:25:20 INFO  - Maximize browser window
+2021-12-16 18:25:20 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:25:22 INFO  - DemoQA banner on landing page
+2021-12-16 18:25:22 INFO  - Alert windows and frame button
+2021-12-16 18:25:22 INFO  - Alert button
+2021-12-16 18:25:22 INFO  - Alerts form
+2021-12-16 18:25:22 INFO  - Simple alert button
+2021-12-16 18:25:22 INFO  - Check is simple alert present
+2021-12-16 18:25:22 INFO  - Get alert text
+2021-12-16 18:25:22 INFO  - Is simple alert present
+2021-12-16 18:25:22 INFO  - Accept alert
+2021-12-16 18:25:22 INFO  - Check is alert present
+2021-12-16 18:25:22 INFO  - Confirm alert button
+2021-12-16 18:25:22 INFO  - Get alert text
+2021-12-16 18:25:22 INFO  - Accept alert
+2021-12-16 18:25:22 INFO  - Confirm result text field
+2021-12-16 18:25:22 INFO  - Confirm result text field
+2021-12-16 18:25:22 INFO  - Prompt alert button
+2021-12-16 18:25:22 INFO  - Get alert text
+2021-12-16 18:25:22 INFO  - Send random generated text to alert
+2021-12-16 18:25:22 INFO  - Accept alert
+2021-12-16 18:25:22 INFO  - Prompt alert result text field
+2021-12-16 18:25:22 INFO  - Quiting driver
+2021-12-16 18:25:23 INFO  - Set driver to null
+2021-12-16 18:25:23 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:25:24 INFO  - Maximize browser window
+2021-12-16 18:25:24 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:25:26 INFO  - DemoQA banner on landing page
+2021-12-16 18:25:26 INFO  - Elements button
+2021-12-16 18:25:26 INFO  - Web tables button
+2021-12-16 18:25:26 INFO  - DemoQA web tablet wrapper
+2021-12-16 18:25:26 INFO  - Add new record button
+2021-12-16 18:25:26 INFO  - First name text field
+2021-12-16 18:25:26 INFO  - Last name text field
+2021-12-16 18:25:26 INFO  - E-mail text field
+2021-12-16 18:25:27 INFO  - Age text field
+2021-12-16 18:25:27 INFO  - Salary text field
+2021-12-16 18:25:27 INFO  - Department text field
+2021-12-16 18:25:27 INFO  - 
+2021-12-16 18:25:27 INFO  - Add new record button
+2021-12-16 18:25:27 INFO  - Add new record button
+2021-12-16 18:25:27 INFO  - Add new record button
+2021-12-16 18:25:27 INFO  - Add new record button
+2021-12-16 18:25:27 INFO  - Add new record button
+2021-12-16 18:25:27 INFO  - Add new record button
+2021-12-16 18:25:27 INFO  - Delete lats record button
+2021-12-16 18:25:27 INFO  - Quiting driver
+2021-12-16 18:25:28 INFO  - Set driver to null
+2021-12-16 18:25:28 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:25:29 INFO  - Maximize browser window
+2021-12-16 18:25:29 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:25:31 INFO  - DemoQA banner on landing page
+2021-12-16 18:25:31 INFO  - Elements button
+2021-12-16 18:25:31 INFO  - Web tables button
+2021-12-16 18:25:31 INFO  - DemoQA web tablet wrapper
+2021-12-16 18:25:31 INFO  - Add new record button
+2021-12-16 18:25:31 INFO  - First name text field
+2021-12-16 18:25:31 INFO  - Last name text field
+2021-12-16 18:25:31 INFO  - E-mail text field
+2021-12-16 18:25:31 INFO  - Age text field
+2021-12-16 18:25:31 INFO  - Salary text field
+2021-12-16 18:25:31 INFO  - Department text field
+2021-12-16 18:25:31 INFO  - 
+2021-12-16 18:25:31 INFO  - Add new record button
+2021-12-16 18:25:32 INFO  - Add new record button
+2021-12-16 18:25:32 INFO  - Add new record button
+2021-12-16 18:25:32 INFO  - Add new record button
+2021-12-16 18:25:32 INFO  - Add new record button
+2021-12-16 18:25:32 INFO  - Add new record button
+2021-12-16 18:25:32 INFO  - Delete lats record button
+2021-12-16 18:25:32 INFO  - Quiting driver
+2021-12-16 18:25:32 INFO  - Set driver to null
+2021-12-16 18:25:32 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:25:33 INFO  - Maximize browser window
+2021-12-16 18:25:34 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:25:35 INFO  - DemoQA banner on landing page
+2021-12-16 18:25:35 INFO  - Elements button
+2021-12-16 18:25:35 INFO  - Web tables button
+2021-12-16 18:25:35 INFO  - DemoQA web tablet wrapper
+2021-12-16 18:25:35 INFO  - Add new record button
+2021-12-16 18:25:35 INFO  - First name text field
+2021-12-16 18:25:36 INFO  - Last name text field
+2021-12-16 18:25:36 INFO  - E-mail text field
+2021-12-16 18:25:36 INFO  - Age text field
+2021-12-16 18:25:36 INFO  - Salary text field
+2021-12-16 18:25:36 INFO  - Department text field
+2021-12-16 18:25:36 INFO  - 
+2021-12-16 18:25:36 INFO  - Add new record button
+2021-12-16 18:25:36 INFO  - Add new record button
+2021-12-16 18:25:36 INFO  - Add new record button
+2021-12-16 18:25:36 INFO  - Add new record button
+2021-12-16 18:25:36 INFO  - Add new record button
+2021-12-16 18:25:36 INFO  - Add new record button
+2021-12-16 18:25:36 INFO  - Delete lats record button
+2021-12-16 18:25:36 INFO  - Quiting driver
+2021-12-16 18:25:37 INFO  - Set driver to null
+2021-12-16 18:25:37 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:25:38 INFO  - Maximize browser window
+2021-12-16 18:25:38 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:25:40 INFO  - DemoQA banner on landing page
+2021-12-16 18:25:40 INFO  - Elements button
+2021-12-16 18:25:40 INFO  - Web tables button
+2021-12-16 18:25:40 INFO  - DemoQA web tablet wrapper
+2021-12-16 18:25:40 INFO  - Add new record button
+2021-12-16 18:25:40 INFO  - First name text field
+2021-12-16 18:25:40 INFO  - Last name text field
+2021-12-16 18:25:40 INFO  - E-mail text field
+2021-12-16 18:25:40 INFO  - Age text field
+2021-12-16 18:25:40 INFO  - Salary text field
+2021-12-16 18:25:40 INFO  - Department text field
+2021-12-16 18:25:40 INFO  - 
+2021-12-16 18:25:40 INFO  - Add new record button
+2021-12-16 18:25:40 INFO  - Add new record button
+2021-12-16 18:25:40 INFO  - Add new record button
+2021-12-16 18:25:40 INFO  - Add new record button
+2021-12-16 18:25:40 INFO  - Add new record button
+2021-12-16 18:25:40 INFO  - Add new record button
+2021-12-16 18:25:41 INFO  - Delete lats record button
+2021-12-16 18:25:41 INFO  - Quiting driver
+2021-12-16 18:25:41 INFO  - Set driver to null
+2021-12-16 18:25:41 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:25:42 INFO  - Maximize browser window
+2021-12-16 18:25:42 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:25:44 INFO  - DemoQA banner on landing page
+2021-12-16 18:25:44 INFO  - Elements button
+2021-12-16 18:25:44 INFO  - Web tables button
+2021-12-16 18:25:44 INFO  - DemoQA web tablet wrapper
+2021-12-16 18:25:44 INFO  - Add new record button
+2021-12-16 18:25:44 INFO  - First name text field
+2021-12-16 18:25:44 INFO  - Last name text field
+2021-12-16 18:25:44 INFO  - E-mail text field
+2021-12-16 18:25:45 INFO  - Age text field
+2021-12-16 18:25:45 INFO  - Salary text field
+2021-12-16 18:25:45 INFO  - Department text field
+2021-12-16 18:25:45 INFO  - 
+2021-12-16 18:25:45 INFO  - Add new record button
+2021-12-16 18:25:45 INFO  - Add new record button
+2021-12-16 18:25:45 INFO  - Add new record button
+2021-12-16 18:25:45 INFO  - Add new record button
+2021-12-16 18:25:45 INFO  - Add new record button
+2021-12-16 18:25:45 INFO  - Add new record button
+2021-12-16 18:25:45 INFO  - Delete lats record button
+2021-12-16 18:25:45 INFO  - Quiting driver
+2021-12-16 18:25:46 INFO  - Set driver to null
+2021-12-16 18:25:46 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:25:47 INFO  - Maximize browser window
+2021-12-16 18:25:47 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:25:49 INFO  - DemoQA banner on landing page
+2021-12-16 18:25:49 INFO  - Elements button
+2021-12-16 18:25:49 INFO  - Web tables button
+2021-12-16 18:25:49 INFO  - DemoQA web tablet wrapper
+2021-12-16 18:25:49 INFO  - Add new record button
+2021-12-16 18:25:49 INFO  - First name text field
+2021-12-16 18:25:49 INFO  - Last name text field
+2021-12-16 18:25:49 INFO  - E-mail text field
+2021-12-16 18:25:49 INFO  - Age text field
+2021-12-16 18:25:49 INFO  - Salary text field
+2021-12-16 18:25:49 INFO  - Department text field
+2021-12-16 18:25:49 INFO  - 
+2021-12-16 18:25:49 INFO  - Add new record button
+2021-12-16 18:25:49 INFO  - Quiting driver
+2021-12-16 18:25:50 INFO  - Set driver to null
+2021-12-16 18:25:50 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:25:51 INFO  - Maximize browser window
+2021-12-16 18:25:51 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:25:53 INFO  - DemoQA banner on landing page
+2021-12-16 18:25:53 INFO  - Elements button
+2021-12-16 18:25:53 INFO  - Web tables button
+2021-12-16 18:25:53 INFO  - DemoQA web tablet wrapper
+2021-12-16 18:25:53 INFO  - Add new record button
+2021-12-16 18:25:53 INFO  - First name text field
+2021-12-16 18:25:53 INFO  - Last name text field
+2021-12-16 18:25:53 INFO  - E-mail text field
+2021-12-16 18:25:53 INFO  - Age text field
+2021-12-16 18:25:53 INFO  - Salary text field
+2021-12-16 18:25:53 INFO  - Department text field
+2021-12-16 18:25:54 INFO  - 
+2021-12-16 18:25:54 INFO  - Add new record button
+2021-12-16 18:25:54 INFO  - Add new record button
+2021-12-16 18:25:54 INFO  - Add new record button
+2021-12-16 18:25:54 INFO  - Add new record button
+2021-12-16 18:25:54 INFO  - Quiting driver
+2021-12-16 18:25:54 INFO  - Set driver to null
+2021-12-16 18:25:54 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:25:55 INFO  - Maximize browser window
+2021-12-16 18:25:56 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:25:58 INFO  - DemoQA banner on landing page
+2021-12-16 18:25:58 INFO  - Elements button
+2021-12-16 18:25:58 INFO  - Web tables button
+2021-12-16 18:25:58 INFO  - DemoQA web tablet wrapper
+2021-12-16 18:25:58 INFO  - Add new record button
+2021-12-16 18:25:58 INFO  - First name text field
+2021-12-16 18:25:58 INFO  - Last name text field
+2021-12-16 18:25:58 INFO  - E-mail text field
+2021-12-16 18:25:58 INFO  - Age text field
+2021-12-16 18:25:58 INFO  - Salary text field
+2021-12-16 18:25:58 INFO  - Department text field
+2021-12-16 18:25:58 INFO  - 
+2021-12-16 18:25:59 INFO  - Add new record button
+2021-12-16 18:25:59 INFO  - Quiting driver
+2021-12-16 18:25:59 INFO  - Set driver to null
+2021-12-16 18:25:59 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:26:00 INFO  - Maximize browser window
+2021-12-16 18:26:00 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:26:02 INFO  - DemoQA banner on landing page
+2021-12-16 18:26:02 INFO  - Elements button
+2021-12-16 18:26:02 INFO  - Web tables button
+2021-12-16 18:26:02 INFO  - DemoQA web tablet wrapper
+2021-12-16 18:26:02 INFO  - Add new record button
+2021-12-16 18:26:02 INFO  - First name text field
+2021-12-16 18:26:02 INFO  - Last name text field
+2021-12-16 18:26:03 INFO  - E-mail text field
+2021-12-16 18:26:03 INFO  - Age text field
+2021-12-16 18:26:03 INFO  - Salary text field
+2021-12-16 18:26:03 INFO  - Department text field
+2021-12-16 18:26:03 INFO  - 
+2021-12-16 18:26:03 INFO  - Add new record button
+2021-12-16 18:26:03 INFO  - Quiting driver
+2021-12-16 18:26:03 INFO  - Set driver to null
+2021-12-16 18:26:03 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:26:05 INFO  - Maximize browser window
+2021-12-16 18:26:05 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:26:06 INFO  - DemoQA banner on landing page
+2021-12-16 18:26:06 INFO  - Elements button
+2021-12-16 18:26:07 INFO  - Web tables button
+2021-12-16 18:26:07 INFO  - DemoQA web tablet wrapper
+2021-12-16 18:26:07 INFO  - Add new record button
+2021-12-16 18:26:07 INFO  - First name text field
+2021-12-16 18:26:07 INFO  - Last name text field
+2021-12-16 18:26:07 INFO  - E-mail text field
+2021-12-16 18:26:07 INFO  - Age text field
+2021-12-16 18:26:07 INFO  - Salary text field
+2021-12-16 18:26:07 INFO  - Department text field
+2021-12-16 18:26:07 INFO  - 
+2021-12-16 18:26:07 INFO  - Add new record button
+2021-12-16 18:26:07 INFO  - Quiting driver
+2021-12-16 18:26:08 INFO  - Set driver to null
+2021-12-16 18:26:08 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:26:09 INFO  - Maximize browser window
+2021-12-16 18:26:09 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:26:11 INFO  - DemoQA banner on landing page
+2021-12-16 18:26:11 INFO  - Widgets button
+2021-12-16 18:26:11 INFO  - Scrolled with JS: 1000
+2021-12-16 18:26:11 INFO  - Slider button
+2021-12-16 18:26:11 INFO  - Get Value attribute
+2021-12-16 18:26:11 INFO  - Get Value attribute
+2021-12-16 18:26:11 INFO  - Get Value attribute
+2021-12-16 18:26:11 INFO  - Get Value attribute
+2021-12-16 18:26:11 INFO  - Get Value attribute
+2021-12-16 18:26:11 INFO  - Get Value attribute
+2021-12-16 18:26:11 INFO  - Get Value attribute
+2021-12-16 18:26:11 INFO  - Get Value attribute
+2021-12-16 18:26:11 INFO  - Get Value attribute
+2021-12-16 18:26:11 INFO  - Get Value attribute
+2021-12-16 18:26:11 INFO  - Get Value attribute
+2021-12-16 18:26:11 INFO  - Get Value attribute
+2021-12-16 18:26:11 INFO  - Get Value attribute
+2021-12-16 18:26:11 INFO  - Get Value attribute
+2021-12-16 18:26:11 INFO  - Get Value attribute
+2021-12-16 18:26:11 INFO  - Get Value attribute
+2021-12-16 18:26:11 INFO  - Get value
+2021-12-16 18:26:11 INFO  - Scrolled with JS: 1000
+2021-12-16 18:26:11 INFO  - Progress bar button
+2021-12-16 18:26:12 INFO  - Progress bar container
+2021-12-16 18:26:12 INFO  - Scrolled with JS: -1000
+2021-12-16 18:26:12 INFO  - Start & stop button
+2021-12-16 18:26:15 INFO  - Start & stop button
+2021-12-16 18:26:15 INFO  - Quiting driver
+2021-12-16 18:26:15 INFO  - Set driver to null
+2021-12-16 18:26:15 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:26:16 INFO  - Maximize browser window
+2021-12-16 18:26:17 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:26:18 INFO  - DemoQA banner on landing page
+2021-12-16 18:26:18 INFO  - Elements button
+2021-12-16 18:26:18 INFO  - Scrolled with JS: 1000
+2021-12-16 18:26:18 INFO  - Download upload button
+2021-12-16 18:26:18 INFO  - Download button on DemoQA download page
+2021-12-16 18:26:18 INFO  - Download button
+2021-12-16 18:26:24 INFO  - Quiting driver
+2021-12-16 18:26:25 INFO  - Set driver to null
+2021-12-16 18:26:25 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:26:26 INFO  - Maximize browser window
+2021-12-16 18:26:26 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:26:28 INFO  - DemoQA banner on landing page
+2021-12-16 18:26:28 INFO  - Alert windows and frame button
+2021-12-16 18:26:28 INFO  - Browser window button
+2021-12-16 18:26:28 INFO  - Browser window form
+2021-12-16 18:26:28 INFO  - New tab button
+2021-12-16 18:26:28 INFO  - Switch to tab which contains 'sample'
+2021-12-16 18:26:28 INFO  - Sample page header
+2021-12-16 18:26:28 INFO  - Switch to tab which contains 'windows'
+2021-12-16 18:26:28 INFO  - Browser window form
+2021-12-16 18:26:28 INFO  - Elements button
+2021-12-16 18:26:28 INFO  - Links button
+2021-12-16 18:26:29 INFO  - Link wrapper on links page
+2021-12-16 18:26:29 INFO  - Get parent window handle
+2021-12-16 18:26:29 INFO  - Home link
+2021-12-16 18:26:29 INFO  - Switch to another then parent window by handle
+2021-12-16 18:26:29 INFO  - DemoQA banner on landing page
+2021-12-16 18:26:29 INFO  - Switch to parent window by handle
+2021-12-16 18:26:29 INFO  - Link wrapper on links page
+2021-12-16 18:26:29 INFO  - Quiting driver
+2021-12-16 18:26:30 INFO  - Set driver to null
+2021-12-16 18:26:30 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:26:31 INFO  - Maximize browser window
+2021-12-16 18:26:31 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:26:33 INFO  - DemoQA banner on landing page
+2021-12-16 18:26:33 INFO  - Alert windows and frame button
+2021-12-16 18:26:33 INFO  - Nested frames button
+2021-12-16 18:26:33 INFO  - Nested frame wrapper
+2021-12-16 18:26:33 INFO  - Switch to parent frame
+2021-12-16 18:26:38 INFO  - Parent frame text field
+2021-12-16 18:26:38 INFO  - Switch to child iframe by index0
+2021-12-16 18:26:38 INFO  - Get frame text
+2021-12-16 18:26:38 INFO  - Switch to default page from frame
+2021-12-16 18:26:38 INFO  - Frames button
+2021-12-16 18:26:38 INFO  - Switch iframe by Id: frame1
+2021-12-16 18:26:43 INFO  - In frame text field
+2021-12-16 18:26:43 INFO  - Switch to default page from frame
+2021-12-16 18:26:43 INFO  - Switch iframe by Id: frame2
+2021-12-16 18:26:48 INFO  - In frame text field
+2021-12-16 18:26:48 INFO  - Quiting driver
+2021-12-16 18:26:49 INFO  - Set driver to null
+2021-12-16 18:33:10 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:33:13 INFO  - Maximize browser window
+2021-12-16 18:33:13 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:33:15 INFO  - DemoQA banner on landing page
+2021-12-16 18:33:15 INFO  - Elements button
+2021-12-16 18:33:15 INFO  - Web tables button
+2021-12-16 18:33:15 INFO  - DemoQA web tablet wrapper
+2021-12-16 18:33:15 INFO  - Add new record button
+2021-12-16 18:33:15 INFO  - First name text field
+2021-12-16 18:33:15 INFO  - Last name text field
+2021-12-16 18:33:15 INFO  - E-mail text field
+2021-12-16 18:33:15 INFO  - Age text field
+2021-12-16 18:33:15 INFO  - Salary text field
+2021-12-16 18:33:15 INFO  - Department text field
+2021-12-16 18:33:15 INFO  - 
+2021-12-16 18:33:16 INFO  - Add new record button
+2021-12-16 18:33:16 INFO  - Add new record button
+2021-12-16 18:33:16 INFO  - Add new record button
+2021-12-16 18:33:16 INFO  - Add new record button
+2021-12-16 18:33:16 INFO  - Add new record button
+2021-12-16 18:33:16 INFO  - Add new record button
+2021-12-16 18:33:16 INFO  - Delete lats record button
+2021-12-16 18:33:16 INFO  - Quiting driver
+2021-12-16 18:33:16 INFO  - Set driver to null
+2021-12-16 18:33:16 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:33:17 INFO  - Maximize browser window
+2021-12-16 18:33:18 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:33:19 INFO  - DemoQA banner on landing page
+2021-12-16 18:33:19 INFO  - Elements button
+2021-12-16 18:33:19 INFO  - Web tables button
+2021-12-16 18:33:19 INFO  - DemoQA web tablet wrapper
+2021-12-16 18:33:19 INFO  - Add new record button
+2021-12-16 18:33:19 INFO  - First name text field
+2021-12-16 18:33:20 INFO  - Last name text field
+2021-12-16 18:33:20 INFO  - E-mail text field
+2021-12-16 18:33:20 INFO  - Age text field
+2021-12-16 18:33:20 INFO  - Salary text field
+2021-12-16 18:33:20 INFO  - Department text field
+2021-12-16 18:33:20 INFO  - 
+2021-12-16 18:33:20 INFO  - Add new record button
+2021-12-16 18:33:20 INFO  - Add new record button
+2021-12-16 18:33:20 INFO  - Add new record button
+2021-12-16 18:33:20 INFO  - Add new record button
+2021-12-16 18:33:20 INFO  - Add new record button
+2021-12-16 18:33:20 INFO  - Add new record button
+2021-12-16 18:33:20 INFO  - Delete lats record button
+2021-12-16 18:33:20 INFO  - Quiting driver
+2021-12-16 18:33:21 INFO  - Set driver to null
+2021-12-16 18:33:21 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:33:22 INFO  - Maximize browser window
+2021-12-16 18:33:22 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:33:23 INFO  - DemoQA banner on landing page
+2021-12-16 18:33:23 INFO  - Elements button
+2021-12-16 18:33:23 INFO  - Web tables button
+2021-12-16 18:33:24 INFO  - DemoQA web tablet wrapper
+2021-12-16 18:33:24 INFO  - Add new record button
+2021-12-16 18:33:24 INFO  - First name text field
+2021-12-16 18:33:24 INFO  - Last name text field
+2021-12-16 18:33:24 INFO  - E-mail text field
+2021-12-16 18:33:24 INFO  - Age text field
+2021-12-16 18:33:24 INFO  - Salary text field
+2021-12-16 18:33:24 INFO  - Department text field
+2021-12-16 18:33:24 INFO  - 
+2021-12-16 18:33:24 INFO  - Add new record button
+2021-12-16 18:33:24 INFO  - Add new record button
+2021-12-16 18:33:24 INFO  - Add new record button
+2021-12-16 18:33:24 INFO  - Add new record button
+2021-12-16 18:33:24 INFO  - Add new record button
+2021-12-16 18:33:24 INFO  - Add new record button
+2021-12-16 18:33:24 INFO  - Delete lats record button
+2021-12-16 18:33:24 INFO  - Quiting driver
+2021-12-16 18:33:25 INFO  - Set driver to null
+2021-12-16 18:33:25 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:33:26 INFO  - Maximize browser window
+2021-12-16 18:33:26 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:33:28 INFO  - DemoQA banner on landing page
+2021-12-16 18:33:28 INFO  - Elements button
+2021-12-16 18:33:28 INFO  - Web tables button
+2021-12-16 18:33:28 INFO  - DemoQA web tablet wrapper
+2021-12-16 18:33:28 INFO  - Add new record button
+2021-12-16 18:33:28 INFO  - First name text field
+2021-12-16 18:33:28 INFO  - Last name text field
+2021-12-16 18:33:28 INFO  - E-mail text field
+2021-12-16 18:33:28 INFO  - Age text field
+2021-12-16 18:33:28 INFO  - Salary text field
+2021-12-16 18:33:28 INFO  - Department text field
+2021-12-16 18:33:28 INFO  - 
+2021-12-16 18:33:28 INFO  - Add new record button
+2021-12-16 18:33:28 INFO  - Add new record button
+2021-12-16 18:33:28 INFO  - Add new record button
+2021-12-16 18:33:28 INFO  - Add new record button
+2021-12-16 18:33:28 INFO  - Add new record button
+2021-12-16 18:33:28 INFO  - Add new record button
+2021-12-16 18:33:28 INFO  - Delete lats record button
+2021-12-16 18:33:28 INFO  - Quiting driver
+2021-12-16 18:33:29 INFO  - Set driver to null
+2021-12-16 18:33:29 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:33:30 INFO  - Maximize browser window
+2021-12-16 18:33:30 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:33:32 INFO  - DemoQA banner on landing page
+2021-12-16 18:33:32 INFO  - Elements button
+2021-12-16 18:33:32 INFO  - Web tables button
+2021-12-16 18:33:32 INFO  - DemoQA web tablet wrapper
+2021-12-16 18:33:32 INFO  - Add new record button
+2021-12-16 18:33:32 INFO  - First name text field
+2021-12-16 18:33:32 INFO  - Last name text field
+2021-12-16 18:33:32 INFO  - E-mail text field
+2021-12-16 18:33:32 INFO  - Age text field
+2021-12-16 18:33:32 INFO  - Salary text field
+2021-12-16 18:33:33 INFO  - Department text field
+2021-12-16 18:33:33 INFO  - 
+2021-12-16 18:33:33 INFO  - Add new record button
+2021-12-16 18:33:33 INFO  - Add new record button
+2021-12-16 18:33:33 INFO  - Add new record button
+2021-12-16 18:33:33 INFO  - Add new record button
+2021-12-16 18:33:33 INFO  - Add new record button
+2021-12-16 18:33:33 INFO  - Add new record button
+2021-12-16 18:33:33 INFO  - Delete lats record button
+2021-12-16 18:33:33 INFO  - Quiting driver
+2021-12-16 18:33:33 INFO  - Set driver to null
+2021-12-16 18:33:33 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:33:35 INFO  - Maximize browser window
+2021-12-16 18:33:35 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:33:36 INFO  - DemoQA banner on landing page
+2021-12-16 18:33:36 INFO  - Elements button
+2021-12-16 18:33:36 INFO  - Web tables button
+2021-12-16 18:33:36 INFO  - DemoQA web tablet wrapper
+2021-12-16 18:33:36 INFO  - Add new record button
+2021-12-16 18:33:36 INFO  - First name text field
+2021-12-16 18:33:36 INFO  - Last name text field
+2021-12-16 18:33:37 INFO  - E-mail text field
+2021-12-16 18:33:37 INFO  - Age text field
+2021-12-16 18:33:37 INFO  - Salary text field
+2021-12-16 18:33:37 INFO  - Department text field
+2021-12-16 18:33:37 INFO  - 
+2021-12-16 18:33:37 INFO  - Add new record button
+2021-12-16 18:33:37 INFO  - Quiting driver
+2021-12-16 18:33:37 INFO  - Set driver to null
+2021-12-16 18:33:37 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:33:39 INFO  - Maximize browser window
+2021-12-16 18:33:39 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:33:40 INFO  - DemoQA banner on landing page
+2021-12-16 18:33:40 INFO  - Elements button
+2021-12-16 18:33:40 INFO  - Web tables button
+2021-12-16 18:33:40 INFO  - DemoQA web tablet wrapper
+2021-12-16 18:33:40 INFO  - Add new record button
+2021-12-16 18:33:40 INFO  - First name text field
+2021-12-16 18:33:40 INFO  - Last name text field
+2021-12-16 18:33:41 INFO  - E-mail text field
+2021-12-16 18:33:41 INFO  - Age text field
+2021-12-16 18:33:41 INFO  - Salary text field
+2021-12-16 18:33:41 INFO  - Department text field
+2021-12-16 18:33:41 INFO  - 
+2021-12-16 18:33:41 INFO  - Add new record button
+2021-12-16 18:33:41 INFO  - Add new record button
+2021-12-16 18:33:41 INFO  - Add new record button
+2021-12-16 18:33:41 INFO  - Add new record button
+2021-12-16 18:33:41 INFO  - Quiting driver
+2021-12-16 18:33:41 INFO  - Set driver to null
+2021-12-16 18:33:41 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:33:43 INFO  - Maximize browser window
+2021-12-16 18:33:43 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:33:44 INFO  - DemoQA banner on landing page
+2021-12-16 18:33:44 INFO  - Elements button
+2021-12-16 18:33:44 INFO  - Web tables button
+2021-12-16 18:33:44 INFO  - DemoQA web tablet wrapper
+2021-12-16 18:33:44 INFO  - Add new record button
+2021-12-16 18:33:45 INFO  - First name text field
+2021-12-16 18:33:45 INFO  - Last name text field
+2021-12-16 18:33:45 INFO  - E-mail text field
+2021-12-16 18:33:45 INFO  - Age text field
+2021-12-16 18:33:45 INFO  - Salary text field
+2021-12-16 18:33:45 INFO  - Department text field
+2021-12-16 18:33:45 INFO  - 
+2021-12-16 18:33:45 INFO  - Add new record button
+2021-12-16 18:33:45 INFO  - Quiting driver
+2021-12-16 18:33:46 INFO  - Set driver to null
+2021-12-16 18:33:46 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:33:47 INFO  - Maximize browser window
+2021-12-16 18:33:47 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:33:48 INFO  - DemoQA banner on landing page
+2021-12-16 18:33:48 INFO  - Elements button
+2021-12-16 18:33:48 INFO  - Web tables button
+2021-12-16 18:33:49 INFO  - DemoQA web tablet wrapper
+2021-12-16 18:33:49 INFO  - Add new record button
+2021-12-16 18:33:49 INFO  - First name text field
+2021-12-16 18:33:49 INFO  - Last name text field
+2021-12-16 18:33:49 INFO  - E-mail text field
+2021-12-16 18:33:49 INFO  - Age text field
+2021-12-16 18:33:49 INFO  - Salary text field
+2021-12-16 18:33:49 INFO  - Department text field
+2021-12-16 18:33:49 INFO  - 
+2021-12-16 18:33:49 INFO  - Add new record button
+2021-12-16 18:33:49 INFO  - Quiting driver
+2021-12-16 18:33:50 INFO  - Set driver to null
+2021-12-16 18:33:50 INFO  - 
+Creating driver for browser: Opera
+2021-12-16 18:33:51 INFO  - Maximize browser window
+2021-12-16 18:33:51 INFO  - Opening page with URL: https://demoqa.com/
+2021-12-16 18:33:52 INFO  - DemoQA banner on landing page
+2021-12-16 18:33:52 INFO  - Elements button
+2021-12-16 18:33:53 INFO  - Web tables button
+2021-12-16 18:33:53 INFO  - DemoQA web tablet wrapper
+2021-12-16 18:33:53 INFO  - Add new record button
+2021-12-16 18:33:53 INFO  - First name text field
+2021-12-16 18:33:53 INFO  - Last name text field
+2021-12-16 18:33:53 INFO  - E-mail text field
+2021-12-16 18:33:53 INFO  - Age text field
+2021-12-16 18:33:53 INFO  - Salary text field
+2021-12-16 18:33:53 INFO  - Department text field
+2021-12-16 18:33:53 INFO  - 
+2021-12-16 18:33:53 INFO  - Add new record button
+2021-12-16 18:33:53 INFO  - Quiting driver
+2021-12-16 18:33:54 INFO  - Set driver to null

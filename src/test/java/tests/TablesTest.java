@@ -1,8 +1,6 @@
 package tests;
 
 import framework.baseTest.BaseTest;
-import framework.elements.Tables;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -41,7 +39,7 @@ public class TablesTest extends BaseTest {
         Assert.assertTrue(demoqaWebTablesPage.isUniqueElementDisplayed(), "Web tables form is not displayed");
         demoqaWebTablesPage.getAddButton().waitAndClick();
         DemoqaWebTablesPage.RegistrationForm.sendRecordDataInTable(firstName, lastName, eMail, age, salary, department);
-        int recordCount = Tables.getNotEmptyTableRowCountBySymbol(By.xpath("//div[@class='rt-tr-group']"), "@");
+        int recordCount = demoqaWebTablesPage.getNotEmptyTableRowCountBySymbol("@");
         Assert.assertTrue(demoqaWebTablesPage.getNewTableRow(recordCount).getText().contains(firstName) &&
                 demoqaWebTablesPage.getNewTableRow(recordCount).getText().contains(lastName) &&
                 demoqaWebTablesPage.getNewTableRow(recordCount).getText().contains(eMail) &&
@@ -49,7 +47,7 @@ public class TablesTest extends BaseTest {
                 demoqaWebTablesPage.getNewTableRow(recordCount).getText().contains(salary) &&
                 demoqaWebTablesPage.getNewTableRow(recordCount).getText().contains(department), "Results in table not match entered data");
         demoqaWebTablesPage.getDeleteRecordButton(recordCount).waitAndClick();
-        Assert.assertTrue(Tables.getNotEmptyTableRowCountBySymbol(By.xpath("//div[@class='rt-tr-group']"), "@")
+        Assert.assertTrue(demoqaWebTablesPage.getNotEmptyTableRowCountBySymbol("@")
                 < recordCount, "Record didn't deleted");
     }
 }

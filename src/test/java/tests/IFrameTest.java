@@ -2,7 +2,6 @@ package tests;
 
 import framework.baseTest.BaseTest;
 import framework.frames.Frames;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pagesDemoQA.DemoqaLandingPage;
@@ -33,11 +32,11 @@ public class IFrameTest extends BaseTest {
                 "Switch to child iframe by index" + TestDataManager.getChildFrameIndex());
         Assert.assertEquals(demoqaNestedFramesPage.getParentChildText().getText(),
                 "Child Iframe", "Child frame text don't match expected one");
-        Frames.switchToDefault("Switch to default page from frame");
+        Frames.switchToDefaultContent("Switch to default page from frame");
         demoqaNestedFramesPage.getFramesButton().waitAndClick();
         Frames.switchToFrameByNameOrId(TestDataManager.getIDOne(), "Switch iframe by Id: " + TestDataManager.getIDOne());
         String frame1text = demoqaNestedFramesPage.getFramesText().getText();
-        Frames.switchToDefault("Switch to default page from frame");
+        Frames.switchToDefaultContent("Switch to default page from frame");
         Frames.switchToFrameByNameOrId(TestDataManager.getIDTwo(), "Switch iframe by Id: " + TestDataManager.getIDTwo());
         String frame2text = demoqaNestedFramesPage.getFramesText().getText();
         Assert.assertEquals(frame1text, frame2text, "Strings don't match");

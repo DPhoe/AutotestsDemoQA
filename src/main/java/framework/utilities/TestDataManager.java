@@ -11,8 +11,8 @@ import java.util.ArrayList;
 import java.util.Properties;
 
 public class TestDataManager {
-    private static int frameIndex = 0;
 
+    private static int frameIndex = 0;
     private static String idOne;
     private static String idTwo;
     public static int getChildFrameIndex() {
@@ -20,7 +20,8 @@ public class TestDataManager {
     }
 
     /**
-     Getting user record data from src/test/resources/TestData.properties by index
+     Getting users record data from src/test/resources/TestData.properties by index
+     Not in use atm
      */
     public static ArrayList<String> getRecordDataByIndexProperties(String index) throws IOException {
         ArrayList<String> recordData = new ArrayList<>();
@@ -65,16 +66,16 @@ public class TestDataManager {
         String json = readFileAsString(file);
         Gson gson = new GsonBuilder()
                 .create();
-        UserRecordsPojo user = gson.fromJson(json, UserRecordsPojo.class);
-        String obj = user.getRecords().get(index).toString();
-        UserRecordsPojo user1 = gson.fromJson(obj, UserRecordsPojo.class);
+        UserRecordsPojo records = gson.fromJson(json, UserRecordsPojo.class);
+        String obj = records.getRecords().get(index).toString();
+        UserRecordsPojo recordsData = gson.fromJson(obj, UserRecordsPojo.class);
         ArrayList<String> recordData = new ArrayList<>();
-        recordData.add(user1.getFirstName());
-        recordData.add(user1.getLastName());
-        recordData.add(user1.getEmail());
-        recordData.add(user1.getAge());
-        recordData.add(user1.getSalary());
-        recordData.add(user1.getDepartment());
+        recordData.add(recordsData.getFirstName());
+        recordData.add(recordsData.getLastName());
+        recordData.add(recordsData.getEmail());
+        recordData.add(recordsData.getAge());
+        recordData.add(recordsData.getSalary());
+        recordData.add(recordsData.getDepartment());
         return recordData;
     }
 
@@ -83,7 +84,5 @@ public class TestDataManager {
         data.addAll(TestDataManager.getRecordDataByIndexJson(index));
         return data.toArray();
     }
-
-
 
 }

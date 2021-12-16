@@ -5,7 +5,7 @@ import framework.elements.Slider;
 import framework.elements.TextField;
 import org.openqa.selenium.By;
 import framework.basePage.BasePage;
-import framework.utilities.DriverSingleton;
+import framework.utilities.driverFactory.DriverSingleton;
 import framework.utilities.Parser;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;

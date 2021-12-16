@@ -1,7 +1,7 @@
 package framework.alerts;
 
 import org.openqa.selenium.NoAlertPresentException;
-import framework.utilities.DriverSingleton;
+import framework.utilities.driverFactory.DriverSingleton;
 import framework.utilities.LoggerUtility;
 
 public class Alerts{

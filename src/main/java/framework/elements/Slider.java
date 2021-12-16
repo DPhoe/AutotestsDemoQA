@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import pagesDemoQA.DemoqaWidgetsPage;
-import framework.utilities.DriverSingleton;
+import framework.utilities.driverFactory.DriverSingleton;
 
 public class Slider extends BaseElement {
     public Slider(By locator, String name) {

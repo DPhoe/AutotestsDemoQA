@@ -18,6 +18,10 @@ public class DemoqaWebTablesPage extends BasePage {
     private TextField newTableRow;
     private Button deleteRecordButton;
 
+    public int getNotEmptyTableRowCountBySymbol(String symbol) {
+        return table.getNotEmptyTableRowCountBySymbol(By.xpath("//div[@class='rt-tr-group']"), symbol);
+    }
+
     private String createTableRowLocator(int index) {
         String loc = String.format("//div[@class='rt-tr-group'][%d]", index);
         return loc;
