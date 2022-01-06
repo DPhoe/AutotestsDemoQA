@@ -1,0 +1,2 @@
+var arr3 = s.split(" ");
+var temp = arr3[arr3.length-1]
