@@ -1,3 +1,1 @@
-var arr3 = s.split(" ");
-var temp = arr3[arr3.length-1]
-"Your temporary password is: H@5Mxncr"
+document.getElementById("button_").disabled
